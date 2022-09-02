@@ -1,0 +1,41 @@
+\chapter{Introduction} \label{chapter:introduction}
+
+Infineon technologies Austria is one of the leading semiconductor companies worldwide. With around 4,820 employees, the company makes an important contribution to shaping the digital and networked future. Through the development of microelectronics and their constant improvement, Infineon enables efficient energy management, intelligent mobility and secure, seamless communication. \newline
+
+Introduction to failure analysis
+
+Failure Analysis process?
+
+
+Detection and localization of faults in semiconductors is a knowledge-intensive and tedious task. To increase the chances of success, an electrical engineer should be able to get all available information about the samples of similar past jobs. Various support systems used in Failure Analysis (FA), like databases, wikis, or file shares, often have this information stored as documents describing previous analysis reports of similar samples, best practices, specifications, customer reports, etc. However, accessing knowledge contained in these documents can be problematic, since in most cases, such support systems only provide rudimentary search functionality, like keyword matching. As a result, to find relevant information about jobs similar to the considered one, an engineer must query multiple systems, manually evaluate returned reports looking for similar characteristics, and asserting the value of each document for the current problem. \newline
+Modern Natural Language Processing methods (NLP) already showed their efficiency in various applications, including automatic translators, Recommender Systems or chatbots. Among these applications, text classification is one of the most promising to solve the FA search problem by automatically associating labels with a report denoting physical or electrical faults described in it, applied methods and tools, etc. The engineers can then use these labels to perform various tasks, like identifying similar jobs or getting statistics on possible faults, tools, or methods. \newline
+This is why one of the first applications of Artificial Intelligence (AI) tools at the FA laboratory of Infineon consisted on a classifier of the FA reports, using word2vec embeddings and clustering models, which satisfactory results. \newline
+
+goal of the project
+
+\section{Problem Definition}
+The goal of this project is to develop a FA report classifier with a BERT model.
+In order to do so, the task has been divided into two phases: \newline
+First, we have developed a Language Model based on the state-of-the-art model BERT. Therefore we had to consider our specific domain and select the most appropriate model for our domain. Since many successors of BERT have been developed but none of them aimed at the electrical domain, we had to select a model as close as possible to our field of study in order to achieve a satisfying performance later. \newline
+Second, we focused on defining the structure of the classifier, which consisted on the BERT network and additional classification layers. To test the results, we have defined a series of classification problems based on the FA reports. \newline
+Given the nature of this project the two phases were developed in parallel so the joint performance hasn't been tested yet. \newline
+
+\subsection{Research Questions}
+
+\section{Research Question 1: Finding the best BERT Model}
+\section{Research Question2: Named Entity Recognition}
+
+
+The goal of this project is to develop a FA report classifier with a BERT model.
+In order to do so, the task has been divided into two phases: \newline
+First, we have developed a Language Model based on the state-of-the-art model BERT. Therefore we had to consider our specific domain and select the most appropriate model for our domain. Since many successors of BERT have been developed but none of them aimed at the electrical domain, we had to select a model as close as possible to our field of study in order to achieve a satisfying performance later. \newline
+Second, we focused on defining the structure of the classifier, which consisted on the BERT network and additional classification layers. To test the results, we have defined a series of classification problems based on the FA reports. \newline
+
+general structure of the project
+
+In order to fulfill this goal, an innovative language model trained on the semiconductor domain had to be developed. Therefore it was necessary to find an existing language model to use it as entry point and further train it on a domain specific dataset to achieve the desired results. This specific dataset had to be collected by myself and transformed into a shape which allows to train a BERT based language model.
+
+Structure of the thesis
+
+The following chapters 
+

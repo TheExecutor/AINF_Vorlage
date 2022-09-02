@@ -1,0 +1,1354 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.7.14)  2 SEP 2022 11:16
+entering extended mode
+ \write18 enabled.
+ %&-line parsing enabled.
+**./thesis.tex
+(thesis.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-02-24> (klureport.cls
+Document Class: klureport 2000/12/13
+
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortb
+l.sty
+Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
+
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
+\col@sep=\dimen138
+\ar@mcellbox=\box50
+\extrarowheight=\dimen139
+\NC@list=\toks16
+\extratabsurround=\skip47
+\backup@length=\skip48
+\ar@cellbox=\box51
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.s
+ty
+Package: color 2021/12/07 v1.3c Standard LaTeX Color (DPC)
+
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\col
+or.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 149.
+
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdf
+tex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\everycr=\toks17
+\minrowclearance=\skip49
+)
+University of Klagenfurt technical report document class,
+based on the KOMA scrreprt class, 1997/11/25 v2.5c.
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/base\size11.clo
+File: size11.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@chapter=\count186
+\c@section=\count187
+\c@subsection=\count188
+\c@subsubsection=\count189
+\c@paragraph=\count190
+\c@subparagraph=\count191
+\c@figure=\count192
+\c@table=\count193
+\abovecaptionskip=\skip50
+\belowcaptionskip=\skip51
+\bibindent=\dimen140
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.st
+y
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks18
+\inpenc@posthook=\toks19
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphic
+x.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.
+sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks20
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphic
+s.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.st
+y
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\gra
+phics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+)
+\Gin@req@height=\dimen141
+\Gin@req@width=\dimen142
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.
+sty
+Package: amsmath 2021/10/15 v2.17l AMS math features
+\@mathmargin=\skip52
+
+For additional information on amsmath, use the `?' option.
+
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.
+sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.s
+ty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks21
+\ex@=\dimen143
+))
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.s
+ty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen144
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.s
+ty
+Package: amsopn 2021/08/26 v2.02 operator names
+)
+\inf@bad=\count194
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count195
+\leftroot@=\count196
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count197
+\DOTSCASE@=\count198
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box52
+\strutbox@=\box53
+\big@size=\dimen145
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count199
+\c@MaxMatrixCols=\count266
+\dotsspace@=\muskip16
+\c@parentequation=\count267
+\dspbrk@lvl=\count268
+\tag@help=\toks22
+\row@=\count269
+\column@=\count270
+\maxfields@=\count271
+\andhelp@=\toks23
+\eqnshift@=\dimen146
+\alignsep@=\dimen147
+\tagshift@=\dimen148
+\tagwidth@=\dimen149
+\totwidth@=\dimen150
+\lineht@=\dimen151
+\@envbody=\toks24
+\multlinegap=\skip53
+\multlinetaggap=\skip54
+\mathdisplay@stack=\toks25
+LaTeX Info: Redefining \[ on input line 2938.
+LaTeX Info: Redefining \] on input line 2939.
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfont
+s.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.st
+y
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks26
+\thm@bodyfont=\toks27
+\thm@headfont=\toks28
+\thm@notefont=\toks29
+\thm@headpunct=\toks30
+\thm@preskip=\skip55
+\thm@postskip=\skip56
+\thm@headsep=\skip57
+\dth@everypar=\toks31
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.s
+ty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+\TX@col@width=\dimen152
+\TX@old@table=\dimen153
+\TX@old@col=\dimen154
+\TX@target=\dimen155
+\TX@delta=\dimen156
+\TX@cols=\count272
+\TX@ftn=\toks32
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspac
+e.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/listings\listing
+s.sty
+\lst@mode=\count273
+\lst@gtempboxa=\box54
+\lst@token=\toks33
+\lst@length=\count274
+\lst@currlwidth=\dimen157
+\lst@column=\count275
+\lst@pos=\count276
+\lst@lostspace=\dimen158
+\lst@width=\dimen159
+\lst@newlines=\count277
+\lst@lineno=\count278
+\lst@maxwidth=\dimen160
+
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc
+.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count279
+\lst@skipnumbers=\count280
+\lst@framebox=\box55
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/listings\listing
+s.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/tocbibind\tocbib
+ind.sty
+Package: tocbibind 2010/10/13 v1.5k extra ToC listings
+Package tocbibind Info: The document has chapter divisions on input line 50.
+
+
+Package tocbibind Note: Using chapter style headings, unless overridden.
+
+) (C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multiro
+w.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip58
+\multirow@cntb=\count281
+\multirow@dima=\skip59
+\bigstrutjot=\dimen161
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/nomencl\nomencl.
+sty
+Package: nomencl 2021/11/10 v5.6 Nomenclature package
+
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.
+sty
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyva
+l.tex
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvuti
+ls.tex
+\XKV@toks=\toks34
+\XKV@tempa@toks=\toks35
+)
+\XKV@depth=\count282
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\tocb
+asic.sty
+Package: tocbasic 2022/05/01 v3.36 KOMA-Script package (handling toc-files)
+
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrb
+ase.sty
+Package: scrbase 2022/05/01 v3.36 KOMA-Script package (KOMA-Script-independent 
+basics and keyval usage)
+
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrl
+file.sty
+Package: scrlfile 2022/05/01 v3.36 KOMA-Script package (file load hooks)
+
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrl
+file-hook.sty
+Package: scrlfile-hook 2022/05/01 v3.36 KOMA-Script package (using LaTeX hooks)
+
+
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrl
+ogo.sty
+Package: scrlogo 2022/05/01 v3.36 KOMA-Script package (logo)
+)))
+Applying: [2021/05/01] Usage of raw or classic option list on input line 252.
+Already applied: [0000/00/00] Usage of raw or classic option list on input line
+ 368.
+)
+\scr@dte@tocline@numberwidth=\skip60
+\scr@dte@tocline@numbox=\box56
+)
+Package tocbasic Info: babel extension for `nlo' omitted
+(tocbasic)             because of missing \bbl@set@language on input line 187.
+Package tocbasic Info: babel extension for `nls' omitted
+(tocbasic)             because of missing \bbl@set@language on input line 188.
+\nomlabelwidth=\dimen162
+\nom@tempdim=\dimen163
+\nomitemsep=\skip61
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlese
+c.sty
+Package: titlesec 2021/07/05 v2.14 Sectioning titles
+\ttl@box=\box57
+\beforetitleunit=\skip62
+\aftertitleunit=\skip63
+\ttl@plus=\dimen164
+\ttl@minus=\dimen165
+\ttl@toksa=\toks36
+\titlewidth=\dimen166
+\titlewidthlast=\dimen167
+\titlewidthfirst=\dimen168
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhd
+r.sty
+Package: fancyhdr 2022/05/18 v4.0.3 Extensive control of page headers and foote
+rs
+\f@nch@headwidth=\skip64
+\f@nch@O@elh=\skip65
+\f@nch@O@erh=\skip66
+\f@nch@O@olh=\skip67
+\f@nch@O@orh=\skip68
+\f@nch@O@elf=\skip69
+\f@nch@O@erf=\skip70
+\f@nch@O@olf=\skip71
+\f@nch@O@orf=\skip72
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+) (C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/lm\lmodern.sty
+Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count283
+\float@exts=\toks37
+\float@box=\box58
+\@float@everytoks=\toks38
+\@floatcapt=\box59
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/easyreview\easyR
+eview.sty
+Package: easyReview 2014/06/27 Package for Easy Review on LaTeX documents
+Package: easyReview 2013/12/09 Package for Easy Review on LaTeX documents
+
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/soul\soul.sty
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks39
+\SOUL@lasttoken=\toks40
+\SOUL@cmds=\toks41
+\SOUL@buffer=\toks42
+\SOUL@token=\toks43
+\SOUL@spaceskip=\skip73
+\SOUL@ttwidth=\dimen169
+\SOUL@uldp=\dimen170
+\SOUL@ulht=\dimen171
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.st
+y
+Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
+
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\col
+or.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+LaTeX Info: Redefining \color on input line 711.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
+Package xcolor Info: Model `RGB' extended on input line 1368.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/todonotes\todono
+tes.sty
+Package: todonotes 2021/06/04 v1.1.5 Todonotes source and documentation.
+Package: todonotes 2021/06/04
+
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlaye
+r\tikz.sty
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\p
+gf.sty
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pg
+frcs.sty
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\
+pgfutil-common.tex
+\pgfutil@everybye=\toks44
+\pgfutil@tempdima=\dimen172
+\pgfutil@tempdimb=\dimen173
+
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\
+pgfutil-common-lists.tex))
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\
+pgfutil-latex.def
+\pgfutil@abb=\box60
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\
+pgfrcs.code.tex
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revisi
+on.tex)
+Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
+))
+Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\p
+gfcore.sty
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\
+pgfsys.sty
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlaye
+r\pgfsys.code.tex
+Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\
+pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks45
+\pgfkeys@temptoks=\toks46
+
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\
+pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks47
+))
+\pgf@x=\dimen174
+\pgf@y=\dimen175
+\pgf@xa=\dimen176
+\pgf@ya=\dimen177
+\pgf@xb=\dimen178
+\pgf@yb=\dimen179
+\pgf@xc=\dimen180
+\pgf@yc=\dimen181
+\pgf@xd=\dimen182
+\pgf@yd=\dimen183
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count284
+\c@pgf@countb=\count285
+\c@pgf@countc=\count286
+\c@pgf@countd=\count287
+\t@pgf@toka=\toks48
+\t@pgf@tokb=\toks49
+\t@pgf@tokc=\toks50
+\pgf@sys@id@count=\count288
+
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlaye
+r\pgf.cfg
+File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlaye
+r\pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlaye
+r\pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlaye
+r\pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfsyssoftpath@smallbuffer@items=\count289
+\pgfsyssoftpath@bigbuffer@items=\count290
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlaye
+r\pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer
+\pgfcore.code.tex
+Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfma
+th.code.tex
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfma
+thcalc.code.tex
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfma
+thutil.code.tex)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfma
+thparser.code.tex
+\pgfmath@dimen=\dimen184
+\pgfmath@count=\count291
+\pgfmath@box=\box61
+\pgfmath@toks=\toks51
+\pgfmath@stack@operand=\toks52
+\pgfmath@stack@operation=\toks53
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfma
+thfunctions.code.tex
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfma
+thfunctions.basic.code.tex)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfma
+thfunctions.trigonometric.code.tex)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfma
+thfunctions.random.code.tex)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfma
+thfunctions.comparison.code.tex)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfma
+thfunctions.base.code.tex)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfma
+thfunctions.round.code.tex)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfma
+thfunctions.misc.code.tex)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfma
+thfunctions.integerarithmetics.code.tex)))
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfma
+thfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count292
+))
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfin
+t.code.tex)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer
+\pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@picminx=\dimen185
+\pgf@picmaxx=\dimen186
+\pgf@picminy=\dimen187
+\pgf@picmaxy=\dimen188
+\pgf@pathminx=\dimen189
+\pgf@pathmaxx=\dimen190
+\pgf@pathminy=\dimen191
+\pgf@pathmaxy=\dimen192
+\pgf@xx=\dimen193
+\pgf@xy=\dimen194
+\pgf@yx=\dimen195
+\pgf@yy=\dimen196
+\pgf@zx=\dimen197
+\pgf@zy=\dimen198
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer
+\pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@path@lastx=\dimen199
+\pgf@path@lasty=\dimen256
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer
+\pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@shorten@end@additional=\dimen257
+\pgf@shorten@start@additional=\dimen258
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer
+\pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfpic=\box62
+\pgf@hbox=\box63
+\pgf@layerbox@main=\box64
+\pgf@picture@serial@count=\count293
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer
+\pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgflinewidth=\dimen259
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer
+\pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@pt@x=\dimen260
+\pgf@pt@y=\dimen261
+\pgf@pt@temp=\dimen262
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer
+\pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer
+\pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer
+\pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer
+\pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfarrowsep=\dimen263
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer
+\pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@max=\dimen264
+\pgf@sys@shading@range@num=\count294
+\pgf@shadingcount=\count295
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer
+\pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer
+\pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfexternal@startupbox=\box65
+))
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer
+\pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer
+\pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer
+\pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer
+\pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pg
+fmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfnodeparttextbox=\box66
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pg
+fmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibilit
+y\pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@nodesepstart=\dimen265
+\pgf@nodesepend=\dimen266
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibilit
+y\pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
+))
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pg
+ffor.sty
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pg
+fkeys.sty
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\
+pgfkeys.code.tex))
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath
+.sty
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfma
+th.code.tex))
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\
+pgffor.code.tex
+Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfma
+th.code.tex)
+\pgffor@iter=\dimen267
+\pgffor@skip=\dimen268
+\pgffor@stack=\toks54
+\pgffor@toks=\toks55
+))
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendla
+yer/tikz\tikz.code.tex
+Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\
+pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@plot@mark@count=\count296
+\pgfplotmarksize=\dimen269
+)
+\tikz@lastx=\dimen270
+\tikz@lasty=\dimen271
+\tikz@lastxsaved=\dimen272
+\tikz@lastysaved=\dimen273
+\tikz@lastmovetox=\dimen274
+\tikz@lastmovetoy=\dimen275
+\tikzleveldistance=\dimen276
+\tikzsiblingdistance=\dimen277
+\tikz@figbox=\box67
+\tikz@figbox@bg=\box68
+\tikz@tempbox=\box69
+\tikz@tempbox@bg=\box70
+\tikztreelevel=\count297
+\tikznumberofchildren=\count298
+\tikznumberofcurrentchild=\count299
+\tikz@fig@count=\count300
+
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pg
+fmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfmatrixcurrentrow=\count301
+\pgfmatrixcurrentcolumn=\count302
+\pgf@matrix@numberofcolumns=\count303
+)
+\tikz@expandcount=\count304
+
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendla
+yer/tikz/libraries\tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendla
+yer/tikz/libraries\tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count305
+\calc@Bcount=\count306
+\calc@Adimen=\dimen278
+\calc@Bdimen=\dimen279
+\calc@Askip=\skip74
+\calc@Bskip=\skip75
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count307
+\calc@Cskip=\skip76
+)
+\c@@todonotes@numberoftodonotes=\count308
+))
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/minted\minted.st
+y
+Package: minted 2021/12/24 v2.6 Yet another Pygments shim for LaTeX
+
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvopti
+ons.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmd
+s.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/kvsetkeys\kvse
+tkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+))
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/fvextra\fvextra.
+sty
+Package: fvextra 2019/02/04 v1.4 fvextra - extensions and patches for fancyvrb
+
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbo
+x.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count309
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/fancyvrb\fancyvr
+b.sty
+Package: fancyvrb 2022/06/06 4.5 verbatim text (tvz,hv)
+\FV@CodeLineNo=\count310
+\FV@InFile=\read3
+\FV@TabBox=\box71
+\c@FancyVerbLine=\count311
+\FV@StepNumber=\count312
+\FV@OutFile=\write4
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/upquote\upquote.
+sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.st
+y
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+))
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/lineno\lineno.st
+y
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count313
+\output=\toks56
+\linenoprevgraf=\count314
+\linenumbersep=\dimen280
+\linenumberwidth=\dimen281
+\c@linenumber=\count315
+\c@pagewiselinenumber=\count316
+\c@LN@truepage=\count317
+\c@internallinenumber=\count318
+\c@internallinenumbers=\count319
+\quotelinenumbersep=\dimen282
+\bframerule=\dimen283
+\bframesep=\dimen284
+\bframebox=\box72
+LaTeX Info: Redefining \\ on input line 3056.
+)
+\c@FV@TrueTabGroupLevel=\count320
+\c@FV@TrueTabCounter=\count321
+\FV@TabBox@Group=\box73
+\FV@TmpLength=\skip77
+\c@FV@HighlightLinesStart=\count322
+\c@FV@HighlightLinesStop=\count323
+\FV@LoopCount=\count324
+\FV@NCharsBox=\box74
+\FV@BreakIndent=\dimen285
+\FV@BreakIndentNChars=\count325
+\FV@BreakSymbolSepLeft=\dimen286
+\FV@BreakSymbolSepLeftNChars=\count326
+\FV@BreakSymbolSepRight=\dimen287
+\FV@BreakSymbolSepRightNChars=\count327
+\FV@BreakSymbolIndentLeft=\dimen288
+\FV@BreakSymbolIndentLeftNChars=\count328
+\FV@BreakSymbolIndentRight=\dimen289
+\FV@BreakSymbolIndentRightNChars=\count329
+\c@FancyVerbLineBreakLast=\count330
+\FV@LineBox=\box75
+\FV@LineIndentBox=\box76
+\FV@LineWidth=\dimen290
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/tools\shellesc.s
+ty
+Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
+Package shellesc Info: Unrestricted shell escape enabled on input line 75.
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/ifplatform\ifpla
+tform.sty
+Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
+
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdf
+texcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infw
+arerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.st
+y
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/catchfile\catc
+hfile.sty
+Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
+
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexc
+mds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+))
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifluatex
+.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+))
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/xstring\xstring.
+sty
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/generic/xstring\xstrin
+g.tex
+\integerpart=\count331
+\decimalpart=\count332
+)
+Package: xstring 2021/07/21 v1.84 String manipulations (CT)
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/framed\framed.st
+y
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip78
+\fb@frw=\dimen291
+\fb@frh=\dimen292
+\FrameRule=\dimen293
+\FrameSep=\dimen294
+)
+\minted@appexistsfile=\read4
+\minted@bgbox=\box77
+\minted@code=\write5
+\c@minted@FancyVerbLineTemp=\count333
+\c@minted@pygmentizecounter=\count334
+\@float@every@listing=\toks57
+\c@listing=\count335
+)
+runsystem(if not exist _minted-thesis mkdir _minted-thesis)...executed.
+
+\@nomenclaturefile=\write6
+\openout6 = `thesis.nlo'.
+
+Package nomencl Info: Writing nomenclature file thesis.nlo on input line 255.
+
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang
+1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang
+1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc
+.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+)
+runsystem(for ^%i in (pygmentize.exe pygmentize.bat pygmentize.cmd) do set > th
+esis.aex <nul: /p x=^%~$PATH:i>> thesis.aex)...executed.
+
+runsystem(del thesis.aex)...executed.
+
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 39
+0.
+
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
+File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3back
+end-pdftex.def
+File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count336
+\l__pdf_internal_box=\box78
+) (thesis.aux (1_introduction/introduction.aux)
+(3_literaturereview/literaturereview.aux) (4_datacollection/datacollection.aux)
+(2_analysis/analysis.aux) (5_resultsevaluation/results.aux)
+(6_conclusion/conclusion.aux))
+\openout1 = `thesis.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 390.
+LaTeX Font Info:    ... okay on input line 390.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 390.
+LaTeX Font Info:    ... okay on input line 390.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 390.
+LaTeX Font Info:    ... okay on input line 390.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 390.
+LaTeX Font Info:    ... okay on input line 390.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 390.
+LaTeX Font Info:    ... okay on input line 390.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 390.
+LaTeX Font Info:    ... okay on input line 390.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 390.
+LaTeX Font Info:    ... okay on input line 390.
+
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp
+-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count337
+\scratchdimen=\dimen295
+\scratchbox=\box79
+\nofMPsegments=\count338
+\nofMParguments=\count339
+\everyMPshowfont=\toks58
+\MPscratchCnt=\count340
+\MPscratchDim=\dimen296
+\MPnumerator=\count341
+\makeMPintoPDFobject=\count342
+\everyMPtoPDFconversion=\toks59
+)
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\eps
+topdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopd
+f-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+\c@lstlisting=\count343
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 3
+95.
+
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 3
+95.
+
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+395.
+
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
+395.
+
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 395.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 395.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 395.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 395
+.
+
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 395
+.
+
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 3
+95.
+ (C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmss.fd
+File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <24.88> on input line 395.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <20.74> on input line 395.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <17.28> on input line 395.
+
+[1
+
+
+
+{C:/Users/GrabnerCorin/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+[2
+
+]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 471.
+
+Overfull \vbox (1.26006pt too high) has occurred while \output is active []
+
+
+[3]
+Overfull \vbox (1.26006pt too high) has occurred while \output is active []
+
+
+[4] [5
+
+]
+Overfull \vbox (1.26006pt too high) has occurred while \output is active []
+
+
+[6]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 5
+45.
+ (C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Overfull \vbox (1.26006pt too high) has occurred while \output is active []
+
+
+[7]
+Overfull \vbox (1.26006pt too high) has occurred while \output is active []
+
+
+[8
+
+] (thesis.toc [9])
+\tf@toc=\write7
+\openout7 = `thesis.toc'.
+
+
+Overfull \vbox (1.26006pt too high) has occurred while \output is active []
+
+
+[10]
+\openout2 = `1_introduction/introduction.aux'.
+
+ (1_introduction/introduction.tex
+Chapter 1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--13
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--22
+
+ []
+
+[1
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 29--33
+
+ []
+
+)
+Overfull \vbox (1.26006pt too high) has occurred while \output is active []
+
+
+[2]
+\openout2 = `3_literaturereview/literaturereview.aux'.
+
+ (3_literaturereview/literaturereview.tex
+Chapter 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+
+ []
+
+[3
+
+
+
+
+]
+
+LaTeX Warning: Citation `Devlin' on page 4 undefined on input line 26.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--27
+
+ []
+
+
+Overfull \vbox (1.26006pt too high) has occurred while \output is active []
+
+
+[4]
+
+LaTeX Warning: Citation `Beltagy' on page 5 undefined on input line 49.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
+
+ []
+
+)
+Overfull \vbox (1.26006pt too high) has occurred while \output is active []
+
+
+[5]
+\openout2 = `4_datacollection/datacollection.aux'.
+
+ (4_datacollection/datacollection.tex
+Overfull \vbox (1.26006pt too high) has occurred while \output is active []
+
+
+[6
+
+
+
+
+]
+Chapter 3.
+[7]
+<figures/S2ORC_Domains.PNG, id=70, 249.43187pt x 232.36812pt>
+File: figures/S2ORC_Domains.PNG Graphic file (type png)
+<use figures/S2ORC_Domains.PNG>
+Package pdftex.def Info: figures/S2ORC_Domains.PNG  used on input line 21.
+(pdftex.def)             Requested size: 273.00278pt x 254.35054pt.
+
+Overfull \vbox (1.26006pt too high) has occurred while \output is active []
+
+
+[8]
+Overfull \vbox (1.26006pt too high) has occurred while \output is active []
+
+
+[9 <./figures/S2ORC_Domains.PNG>]
+Overfull \vbox (1.26006pt too high) has occurred while \output is active []
+
+
+[10]
+\openout4 = `thesis.pyg'.
+
+ (_minted-thesis/default.pygstyle)
+(_minted-thesis/36FCF5501599EE97423FF79752ACF77F8FBDBCB5E0AFA139CAB6197421B8C3C
+1.pygtex))
+Overfull \vbox (1.26006pt too high) has occurred while \output is active []
+
+
+[11]
+\openout2 = `2_analysis/analysis.aux'.
+
+ (2_analysis/analysis.tex
+Overfull \vbox (1.26006pt too high) has occurred while \output is active []
+
+
+[12
+
+
+
+
+]
+Chapter 4.
+[13])
+Overfull \vbox (1.26006pt too high) has occurred while \output is active []
+
+
+[14]
+\openout2 = `5_resultsevaluation/results.aux'.
+
+ (5_resultsevaluation/results.tex
+Chapter 5.
+) [15
+
+
+
+
+]
+\openout2 = `6_conclusion/conclusion.aux'.
+
+ (6_conclusion/conclusion.tex
+Overfull \vbox (1.26006pt too high) has occurred while \output is active []
+
+
+[16
+
+
+
+
+]
+Chapter 6.
+) [17]
+No file thesis.nls.
+(thesis.bbl [18
+
+
+
+]
+
+! LaTeX Error: Invalid UTF-8 byte "FC.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9   {Vogel-Verlag KG.}, Wü
+                            rzburg (2001).
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! LaTeX Error: Invalid UTF-8 byte "FC.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.54 ...buch der Chipkarten. Carl Hanser Verlag Mü
+                                                  nchen Wien
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! LaTeX Error: Invalid UTF-8 byte "FC.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55   (2002), 4., ü
+                    berarbeitete und aktualisierte Auflage.
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! LaTeX Error: Invalid UTF-8 byte "FC.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.58 ...ipkartenanwendungen. Carl Hanser Verlag Mü
+                                                  nchen Wien (2006),
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! LaTeX Error: Invalid UTF-8 byte "FC.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.59   entwurfsmuster fü
+                        r Einsatz und Programmierung von Chipkarten.
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+[19]) [20] (thesis.aux (1_introduction/introduction.aux)
+(3_literaturereview/literaturereview.aux) (4_datacollection/datacollection.aux)
+(2_analysis/analysis.aux) (5_resultsevaluation/results.aux)
+(6_conclusion/conclusion.aux))
+
+LaTeX Warning: There were undefined references.
+
+runsystem(del thesis.pyg)...executed.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 21514 strings out of 478582
+ 438548 string characters out of 2841040
+ 949358 words of memory out of 3000000
+ 39169 multiletter control sequences out of 15000+600000
+ 559378 words of font info for 88 fonts, out of 8000000 for 9000
+ 1143 hyphenation exceptions out of 8191
+ 115i,11n,109p,1608b,459s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/Users/GrabnerCorin/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec
+.enc}{C:/Users/GrabnerCorin/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm
+-mathsy.enc}{C:/Users/GrabnerCorin/AppData/Local/Programs/MiKTeX/fonts/enc/dvip
+s/lm/lm-mathit.enc}<C:/Users/GrabnerCorin/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/lm/lmbx10.pfb><C:/Users/GrabnerCorin/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/lm/lmbx12.pfb><C:/Users/GrabnerCorin/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/GrabnerCorin/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/GrabnerCorin/AppData/
+Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/GrabnerCorin/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/GrabnerC
+orin/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Gr
+abnerCorin/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/U
+sers/GrabnerCorin/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri9.pfb
+><C:/Users/GrabnerCorin/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lms
+sbx10.pfb><C:/Users/GrabnerCorin/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/lm/lmsy10.pfb><C:/Users/GrabnerCorin/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/lm/lmtt10.pfb>
+Output written on thesis.pdf (30 pages, 347412 bytes).
+PDF statistics:
+ 167 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+
