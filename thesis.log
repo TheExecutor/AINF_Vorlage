@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.7.14)  2 SEP 2022 11:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.7.14)  7 NOV 2022 10:44
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -891,10 +891,44 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 )
 runsystem(if not exist _minted-thesis mkdir _minted-thesis)...executed.
 
+
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.
+sty
+Package: caption 2022/03/01 v3.6b Customizing captions (AR)
+
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3
+.sty
+Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
+\caption@tempdima=\dimen295
+\captionmargin=\dimen296
+\caption@leftmargin=\dimen297
+\caption@rightmargin=\dimen298
+\caption@width=\dimen299
+\caption@indent=\dimen300
+\caption@parindent=\dimen301
+\caption@hangindent=\dimen302
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+Package caption Info: \@makecaption = \long macro:#1#2->\vskip \abovecaptionski
+p \sbox \@tempboxa {{\caplabelfont #1\captionformat }{\capfont #2}}\ifdim \wd \
+@tempboxa >\hsize \@hangfrom {{\caplabelfont #1\captionformat }}{\capfont #2\pa
+r } \else \global \@minipagefalse \hb@xt@ \hsize {\hfil \box \@tempboxa \hfil }
+\fi \vskip \belowcaptionskip  on input line 1176.
+)
+
+Package caption Warning: Unknown document class (or package),
+(caption)                standard defaults will be used.
+See the caption package documentation for explanation.
+
+\c@caption@flags=\count336
+\c@continuedfloat=\count337
+Package caption Info: float package is loaded.
+Package caption Info: listings package is loaded.
+)
 \@nomenclaturefile=\write6
 \openout6 = `thesis.nlo'.
 
-Package nomencl Info: Writing nomenclature file thesis.nlo on input line 255.
+Package nomencl Info: Writing nomenclature file thesis.nlo on input line 258.
 
 (C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang
 1.sty
@@ -914,7 +948,7 @@ esis.aex <nul: /p x=^%~$PATH:i>> thesis.aex)...executed.
 runsystem(del thesis.aex)...executed.
 
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 39
-0.
+3.
 
 (C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -922,42 +956,42 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 (C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3back
 end-pdftex.def
 File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count336
+\l__color_backend_stack_int=\count338
 \l__pdf_internal_box=\box78
 ) (thesis.aux (1_introduction/introduction.aux)
-(3_literaturereview/literaturereview.aux) (4_datacollection/datacollection.aux)
-(2_analysis/analysis.aux) (5_resultsevaluation/results.aux)
-(6_conclusion/conclusion.aux))
+(3_literaturereview/literaturereview.aux) (2_analysis/analysis.aux)
+(4_datacollection/datacollection.aux) (7_experiments/experiments.aux)
+(5_resultsevaluation/results.aux) (6_conclusion/conclusion.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 390.
-LaTeX Font Info:    ... okay on input line 390.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 390.
-LaTeX Font Info:    ... okay on input line 390.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 390.
-LaTeX Font Info:    ... okay on input line 390.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 390.
-LaTeX Font Info:    ... okay on input line 390.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 390.
-LaTeX Font Info:    ... okay on input line 390.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 390.
-LaTeX Font Info:    ... okay on input line 390.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 390.
-LaTeX Font Info:    ... okay on input line 390.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 393.
+LaTeX Font Info:    ... okay on input line 393.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 393.
+LaTeX Font Info:    ... okay on input line 393.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 393.
+LaTeX Font Info:    ... okay on input line 393.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 393.
+LaTeX Font Info:    ... okay on input line 393.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 393.
+LaTeX Font Info:    ... okay on input line 393.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 393.
+LaTeX Font Info:    ... okay on input line 393.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 393.
+LaTeX Font Info:    ... okay on input line 393.
 
 (C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp
 -pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count337
-\scratchdimen=\dimen295
+\scratchcounter=\count339
+\scratchdimen=\dimen303
 \scratchbox=\box79
-\nofMPsegments=\count338
-\nofMParguments=\count339
+\nofMPsegments=\count340
+\nofMParguments=\count341
 \everyMPshowfont=\toks58
-\MPscratchCnt=\count340
-\MPscratchDim=\dimen296
-\MPnumerator=\count341
-\makeMPintoPDFobject=\count342
+\MPscratchCnt=\count342
+\MPscratchDim=\dimen304
+\MPnumerator=\count343
+\makeMPintoPDFobject=\count344
 \everyMPtoPDFconversion=\toks59
 )
 (C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\eps
@@ -970,60 +1004,62 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 f-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-\c@lstlisting=\count343
+\c@lstlisting=\count345
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 3
-95.
+98.
 
 (C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 3
-95.
+98.
 
 (C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-395.
+398.
 
 (C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-395.
+398.
 
 (C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 395.
+(Font)              <12> on input line 398.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 395.
+(Font)              <8> on input line 398.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 395.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 395
+(Font)              <6> on input line 398.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 398
 .
 
 (C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 395
+LaTeX Font Info:    Trying to load font information for U+msb on input line 398
 .
 
 (C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for T1+lmss on input line 3
-95.
+98.
  (C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <24.88> on input line 395.
+(Font)              <24.88> on input line 398.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <20.74> on input line 395.
+(Font)              <20.74> on input line 398.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <17.28> on input line 395.
+(Font)              <17.28> on input line 398.
 
 [1
 
@@ -1034,7 +1070,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 471.
+(Font)              <10.95> on input line 474.
 
 Overfull \vbox (1.26006pt too high) has occurred while \output is active []
 
@@ -1051,7 +1087,7 @@ Overfull \vbox (1.26006pt too high) has occurred while \output is active []
 
 [6]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 5
-45.
+48.
  (C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1097,7 +1133,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--22
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 29--33
+Underfull \hbox (badness 10000) in paragraph at lines 33--37
 
  []
 
@@ -1147,9 +1183,9 @@ Overfull \vbox (1.26006pt too high) has occurred while \output is active []
 
 
 [5]
-\openout2 = `4_datacollection/datacollection.aux'.
+\openout2 = `2_analysis/analysis.aux'.
 
- (4_datacollection/datacollection.tex
+ (2_analysis/analysis.tex
 Overfull \vbox (1.26006pt too high) has occurred while \output is active []
 
 
@@ -1160,8 +1196,75 @@ Overfull \vbox (1.26006pt too high) has occurred while \output is active []
 
 ]
 Chapter 3.
-[7]
-<figures/S2ORC_Domains.PNG, id=70, 249.43187pt x 232.36812pt>
+\openout4 = `thesis.pyg'.
+
+(_minted-thesis/default.pygstyle)
+(_minted-thesis/C23CED146F01BF5CEBA20ECC13D27AF98FBDBCB5E0AFA139CAB6197421B8C3C
+1.pygtex
+LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 
+3.
+
+(C:\Users\GrabnerCorin\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmtt.fd
+File: ts1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+))
+\openout4 = `thesis.pyg'.
+
+
+(_minted-thesis/BFC8585572718419AAA34856305B58828FBDBCB5E0AFA139CAB6197421B8C3C
+1.pygtex
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 6.
+ [7])
+<figures/example_good_bad.PNG, id=73, 167.62625pt x 218.8175pt>
+File: figures/example_good_bad.PNG Graphic file (type png)
+<use figures/example_good_bad.PNG>
+Package pdftex.def Info: figures/example_good_bad.PNG  used on input line 33.
+(pdftex.def)             Requested size: 136.50139pt x 178.1861pt.
+\openout4 = `thesis.pyg'.
+
+
+(_minted-thesis/FED4F62B7D57A66B6F20E63D05FADAC28FBDBCB5E0AFA139CAB6197421B8C3C
+1.pygtex
+Overfull \vbox (1.26006pt too high) has occurred while \output is active []
+
+
+[8 <./figures/example_good_bad.PNG>])
+<figures/keyword_comparison.PNG, id=79, 244.41313pt x 53.19875pt>
+File: figures/keyword_comparison.PNG Graphic file (type png)
+<use figures/keyword_comparison.PNG>
+Package pdftex.def Info: figures/keyword_comparison.PNG  used on input line 57.
+
+(pdftex.def)             Requested size: 227.5pt x 49.51814pt.
+<figures/wordstems_comparison.PNG, id=80, 106.3975pt x 72.27pt>
+File: figures/wordstems_comparison.PNG Graphic file (type png)
+<use figures/wordstems_comparison.PNG>
+Package pdftex.def Info: figures/wordstems_comparison.PNG  used on input line 6
+8.
+(pdftex.def)             Requested size: 136.50139pt x 92.7236pt.
+\openout4 = `thesis.pyg'.
+
+
+(_minted-thesis/937BDB9046100D93F859DBF21279A5358FBDBCB5E0AFA139CAB6197421B8C3C
+1.pygtex))
+Overfull \vbox (1.26006pt too high) has occurred while \output is active []
+
+
+[9 <./figures/keyword_comparison.PNG> <./figures/wordstems_comparison.PNG>]
+Overfull \vbox (1.26006pt too high) has occurred while \output is active []
+
+
+[10]
+\openout2 = `4_datacollection/datacollection.aux'.
+
+ (4_datacollection/datacollection.tex
+Chapter 4.
+[11
+
+
+
+
+]
+<figures/S2ORC_Domains.PNG, id=96, 249.43187pt x 232.36812pt>
 File: figures/S2ORC_Domains.PNG Graphic file (type png)
 <use figures/S2ORC_Domains.PNG>
 Package pdftex.def Info: figures/S2ORC_Domains.PNG  used on input line 21.
@@ -1170,55 +1273,27 @@ Package pdftex.def Info: figures/S2ORC_Domains.PNG  used on input line 21.
 Overfull \vbox (1.26006pt too high) has occurred while \output is active []
 
 
-[8]
+[12]
 Overfull \vbox (1.26006pt too high) has occurred while \output is active []
 
 
-[9 <./figures/S2ORC_Domains.PNG>]
+[13 <./figures/S2ORC_Domains.PNG>]
 Overfull \vbox (1.26006pt too high) has occurred while \output is active []
 
 
-[10]
+[14]
 \openout4 = `thesis.pyg'.
 
- (_minted-thesis/default.pygstyle)
+
 (_minted-thesis/36FCF5501599EE97423FF79752ACF77F8FBDBCB5E0AFA139CAB6197421B8C3C
 1.pygtex))
 Overfull \vbox (1.26006pt too high) has occurred while \output is active []
 
 
-[11]
-\openout2 = `2_analysis/analysis.aux'.
+[15]
+\openout2 = `7_experiments/experiments.aux'.
 
- (2_analysis/analysis.tex
-Overfull \vbox (1.26006pt too high) has occurred while \output is active []
-
-
-[12
-
-
-
-
-]
-Chapter 4.
-[13])
-Overfull \vbox (1.26006pt too high) has occurred while \output is active []
-
-
-[14]
-\openout2 = `5_resultsevaluation/results.aux'.
-
- (5_resultsevaluation/results.tex
-Chapter 5.
-) [15
-
-
-
-
-]
-\openout2 = `6_conclusion/conclusion.aux'.
-
- (6_conclusion/conclusion.tex
+ (7_experiments/experiments.tex
 Overfull \vbox (1.26006pt too high) has occurred while \output is active []
 
 
@@ -1228,10 +1303,225 @@ Overfull \vbox (1.26006pt too high) has occurred while \output is active []
 
 
 ]
+Chapter 5.
+\openout4 = `thesis.pyg'.
+
+
+(_minted-thesis/7DB09A3FEA322F9AD4818DC81129E2168FBDBCB5E0AFA139CAB6197421B8C3C
+1.pygtex)
+<figures/dataset_dict_features.png, id=114, 120.95187pt x 41.65562pt>
+File: figures/dataset_dict_features.png Graphic file (type png)
+<use figures/dataset_dict_features.png>
+Package pdftex.def Info: figures/dataset_dict_features.png  used on input line 
+21.
+(pdftex.def)             Requested size: 181.99722pt x 62.68666pt.
+\openout4 = `thesis.pyg'.
+
+
+(_minted-thesis/78946C81F105C2416F522C9E5BF98FBE8FBDBCB5E0AFA139CAB6197421B8C3C
+1.pygtex) [17 <./figures/dataset_dict_features.png>]
+\openout4 = `thesis.pyg'.
+
+
+(_minted-thesis/92017E6C80EBE147B08227522F9C770E8FBDBCB5E0AFA139CAB6197421B8C3C
+1.pygtex)
+<figures/tok_dataset.png, id=119, 307.1475pt x 61.73062pt>
+File: figures/tok_dataset.png Graphic file (type png)
+<use figures/tok_dataset.png>
+Package pdftex.def Info: figures/tok_dataset.png  used on input line 52.
+(pdftex.def)             Requested size: 364.00139pt x 73.16173pt.
+\openout4 = `thesis.pyg'.
+
+
+(_minted-thesis/3BD2FC0AB41214F346051A001520A3558FBDBCB5E0AFA139CAB6197421B8C3C
+1.pygtex
+Overfull \vbox (1.26006pt too high) has occurred while \output is active []
+
+
+[18 <./figures/tok_dataset.png>])
+\openout4 = `thesis.pyg'.
+
+
+(_minted-thesis/BF49EA6A836635D5F94B8A828BC75C4A8FBDBCB5E0AFA139CAB6197421B8C3C
+1.pygtex)
+Overfull \vbox (1.26006pt too high) has occurred while \output is active []
+
+
+[19]
+\openout4 = `thesis.pyg'.
+
+
+(_minted-thesis/F9CED8E908E7661E8B3E7993EB8782DB8FBDBCB5E0AFA139CAB6197421B8C3C
+1.pygtex)
+
+LaTeX Warning: Reference `chapter:datachunking' on page 20 undefined on input l
+ine 138.
+
+
+LaTeX Warning: Reference `chapter:hpc' on page 20 undefined on input line 138.
+
+
+LaTeX Warning: Reference `code:checkpoint' on page 20 undefined on input line 1
+49.
+
+
+LaTeX Warning: Reference `chapter:datachunking' on page 20 undefined on input l
+ine 149.
+
+\openout4 = `thesis.pyg'.
+
+
+(_minted-thesis/14C7D5FDA981588D3681C855A682F5998FBDBCB5E0AFA139CAB6197421B8C3C
+1.pygtex) [20]
+\openout4 = `thesis.pyg'.
+
+
+(_minted-thesis/EDB7DF51BA139245A8357238750AC7008FBDBCB5E0AFA139CAB6197421B8C3C
+1.pygtex)
+\openout4 = `thesis.pyg'.
+
+
+(_minted-thesis/21D21C7948CC3EA9FAB427618DEB9CA58FBDBCB5E0AFA139CAB6197421B8C3C
+1.pygtex)
+<figures/loss_inf_small.png, id=131, 191.21437pt x 137.01187pt>
+File: figures/loss_inf_small.png Graphic file (type png)
+<use figures/loss_inf_small.png>
+Package pdftex.def Info: figures/loss_inf_small.png  used on input line 203.
+(pdftex.def)             Requested size: 273.00278pt x 195.64116pt.
+<figures/loss_inf_large.png, id=132, 196.735pt x 139.01938pt>
+File: figures/loss_inf_large.png Graphic file (type png)
+<use figures/loss_inf_large.png>
+Package pdftex.def Info: figures/loss_inf_large.png  used on input line 210.
+(pdftex.def)             Requested size: 273.00278pt x 192.92665pt.
+
+Overfull \vbox (1.26006pt too high) has occurred while \output is active []
+
+
+[21 <./figures/loss_inf_small.png>]
+<figures/loss_inf_ext.png, id=138, 193.72375pt x 138.01563pt>
+File: figures/loss_inf_ext.png Graphic file (type png)
+<use figures/loss_inf_ext.png>
+Package pdftex.def Info: figures/loss_inf_ext.png  used on input line 217.
+(pdftex.def)             Requested size: 273.00278pt x 194.50095pt.
+<figures/loss_infs2_s2.png, id=139, 195.22937pt x 138.01563pt>
+File: figures/loss_infs2_s2.png Graphic file (type png)
+<use figures/loss_infs2_s2.png>
+Package pdftex.def Info: figures/loss_infs2_s2.png  used on input line 224.
+(pdftex.def)             Requested size: 273.00278pt x 193.00572pt.
+
+Overfull \vbox (1.26006pt too high) has occurred while \output is active []
+
+
+[22 <./figures/loss_inf_large.png> <./figures/loss_inf_ext.png>]
+<figures/loss_infs2_large.png, id=145, 185.19188pt x 135.00438pt>
+File: figures/loss_infs2_large.png Graphic file (type png)
+<use figures/loss_infs2_large.png>
+Package pdftex.def Info: figures/loss_infs2_large.png  used on input line 232.
+(pdftex.def)             Requested size: 273.00278pt x 199.02052pt.
+
+Overfull \vbox (1.26006pt too high) has occurred while \output is active []
+
+
+[23 <./figures/loss_infs2_s2.png> <./figures/loss_infs2_large.png>]
+\openout4 = `thesis.pyg'.
+
+
+(_minted-thesis/884AFE2314DA757F9AF47F8A0F03DFEB8FBDBCB5E0AFA139CAB6197421B8C3C
+1.pygtex)
+! You can't use `macro parameter character #' in horizontal mode.
+<argument> ...4.17.0/src/transformers/trainer.py##
+                                                  L2006
+l.269 ...4.17.0/src/transformers/trainer.py#L2006}
+                                                  
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Overfull \hbox (30.02315pt too wide) in paragraph at lines 269--270
+[]\T1/lmr/m/n/10.95 quelle: https://github.com/huggingface/transformers/blob/v4
+.17.0/src/transformers/trainer.pyL2006[] 
+ []
+
+\openout4 = `thesis.pyg'.
+
+
+(_minted-thesis/C6DE0AA92FBD7B4A377D997EFF7BF4058FBDBCB5E0AFA139CAB6197421B8C3C
+1.pygtex)
+Overfull \vbox (1.26006pt too high) has occurred while \output is active []
+
+
+[24]
+<figures/tok_dataset_wordids.png, id=154, 376.90813pt x 61.22874pt>
+File: figures/tok_dataset_wordids.png Graphic file (type png)
+<use figures/tok_dataset_wordids.png>
+Package pdftex.def Info: figures/tok_dataset_wordids.png  used on input line 29
+9.
+(pdftex.def)             Requested size: 273.00278pt x 44.34904pt.
+\openout4 = `thesis.pyg'.
+
+
+(_minted-thesis/7E6BD924E479C69DBAFE058FE3A25A608FBDBCB5E0AFA139CAB6197421B8C3C
+1.pygtex
+Overfull \vbox (1.26006pt too high) has occurred while \output is active []
+
+
+[25 <./figures/tok_dataset_wordids.png>])
+<figures/wwm_example.png, id=159, 792.0792pt x 159.4758pt>
+File: figures/wwm_example.png Graphic file (type png)
+<use figures/wwm_example.png>
+Package pdftex.def Info: figures/wwm_example.png  used on input line 345.
+(pdftex.def)             Requested size: 455.0pt x 91.61026pt.
+\openout4 = `thesis.pyg'.
+
+
+(_minted-thesis/38A8D5727389789A58DF91176F32A8908FBDBCB5E0AFA139CAB6197421B8C3C
+1.pygtex)
+<figures/loss_wwm.png, id=160, 214.30063pt x 157.08687pt>
+File: figures/loss_wwm.png Graphic file (type png)
+<use figures/loss_wwm.png>
+Package pdftex.def Info: figures/loss_wwm.png  used on input line 368.
+(pdftex.def)             Requested size: 273.00278pt x 200.13327pt.
+)
+Overfull \vbox (1.26006pt too high) has occurred while \output is active []
+
+
+[26 <./figures/wwm_example.png>]
+Overfull \vbox (1.26006pt too high) has occurred while \output is active []
+
+
+[27 <./figures/loss_wwm.png>]
+\openout2 = `5_resultsevaluation/results.aux'.
+
+ (5_resultsevaluation/results.tex
+Overfull \vbox (1.26006pt too high) has occurred while \output is active []
+
+
+[28
+
+
+
+
+]
 Chapter 6.
-) [17]
+) [29]
+\openout2 = `6_conclusion/conclusion.aux'.
+
+ (6_conclusion/conclusion.tex
+Overfull \vbox (1.26006pt too high) has occurred while \output is active []
+
+
+[30
+
+
+
+
+]
+Chapter 7.
+) [31]
 No file thesis.nls.
-(thesis.bbl [18
+(thesis.bbl [32
 
 
 
@@ -1311,44 +1601,53 @@ or specify an encoding such as \usepackage [latin1]{inputenc}
 in the document preamble.
 Alternatively, save the file in UTF-8 using your editor or another tool
 
-[19]) [20] (thesis.aux (1_introduction/introduction.aux)
-(3_literaturereview/literaturereview.aux) (4_datacollection/datacollection.aux)
-(2_analysis/analysis.aux) (5_resultsevaluation/results.aux)
-(6_conclusion/conclusion.aux))
+[33]) [34] (thesis.aux (1_introduction/introduction.aux)
+(3_literaturereview/literaturereview.aux) (2_analysis/analysis.aux)
+(4_datacollection/datacollection.aux) (7_experiments/experiments.aux)
+(5_resultsevaluation/results.aux) (6_conclusion/conclusion.aux))
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 runsystem(del thesis.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 21514 strings out of 478582
- 438548 string characters out of 2841040
- 949358 words of memory out of 3000000
- 39169 multiletter control sequences out of 15000+600000
- 559378 words of font info for 88 fonts, out of 8000000 for 9000
+ 23117 strings out of 478582
+ 479272 string characters out of 2841040
+ 971629 words of memory out of 3000000
+ 40685 multiletter control sequences out of 15000+600000
+ 554642 words of font info for 90 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 115i,11n,109p,1608b,459s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Users/GrabnerCorin/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec
-.enc}{C:/Users/GrabnerCorin/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm
--mathsy.enc}{C:/Users/GrabnerCorin/AppData/Local/Programs/MiKTeX/fonts/enc/dvip
-s/lm/lm-mathit.enc}<C:/Users/GrabnerCorin/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/lm/lmbx10.pfb><C:/Users/GrabnerCorin/AppData/Local/Programs/MiKTeX/
-fonts/type1/public/lm/lmbx12.pfb><C:/Users/GrabnerCorin/AppData/Local/Programs/
-MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/GrabnerCorin/AppData/Local/P
-rograms/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/GrabnerCorin/AppData/
-Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/GrabnerCorin/A
-ppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/GrabnerC
-orin/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Gr
-abnerCorin/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/U
-sers/GrabnerCorin/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri9.pfb
-><C:/Users/GrabnerCorin/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lms
-sbx10.pfb><C:/Users/GrabnerCorin/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/lm/lmsy10.pfb><C:/Users/GrabnerCorin/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/public/lm/lmtt10.pfb>
-Output written on thesis.pdf (30 pages, 347412 bytes).
+ 115i,11n,117p,1608b,667s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/Users/GrabnerCorin/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts
+1.enc}{C:/Users/GrabnerCorin/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/l
+m-mathit.enc}{C:/Users/GrabnerCorin/AppData/Local/Programs/MiKTeX/fonts/enc/dvi
+ps/lm/lm-rm.enc}{C:/Users/GrabnerCorin/AppData/Local/Programs/MiKTeX/fonts/enc/
+dvips/lm/lm-ec.enc}{C:/Users/GrabnerCorin/AppData/Local/Programs/MiKTeX/fonts/e
+nc/dvips/lm/lm-mathsy.enc}<C:/Users/GrabnerCorin/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/lm/lmbx10.pfb><C:/Users/GrabnerCorin/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/GrabnerCorin/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/GrabnerCorin/AppData/
+Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/GrabnerCorin/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Grabner
+Corin/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/G
+rabnerCorin/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/U
+sers/GrabnerCorin/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb
+><C:/Users/GrabnerCorin/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr
+8.pfb><C:/Users/GrabnerCorin/AppData/Local/Programs/MiKTeX/fonts/type1/public/l
+m/lmri10.pfb><C:/Users/GrabnerCorin/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/lm/lmri9.pfb><C:/Users/GrabnerCorin/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/lm/lmssbx10.pfb><C:/Users/GrabnerCorin/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/lm/lmsy10.pfb><C:/Users/GrabnerCorin/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/lm/lmtk10.pfb><C:/Users/GrabnerCorin/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/GrabnerCorin/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtti10.pfb>
+Output written on thesis.pdf (44 pages, 832959 bytes).
 PDF statistics:
- 167 PDF objects out of 1000 (max. 8388607)
+ 271 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 83 words of extra memory for PDF output out of 10000 (max. 10000000)
 

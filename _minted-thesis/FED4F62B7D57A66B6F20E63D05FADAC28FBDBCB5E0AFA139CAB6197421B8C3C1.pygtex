@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+	\PYG{c+c1}{\PYGZsh{}create a new stemmer}
+	\PYG{n}{stemmer} \PYG{o}{=} \PYG{n}{SnowballStemmer}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}english\PYGZdq{}}\PYG{p}{)}
+	
+	\PYG{c+c1}{\PYGZsh{}test the stammer on pluralized words}
+	\PYG{n}{most\PYGZus{}common\PYGZus{}stems} \PYG{o}{=} \PYG{n}{nltk}\PYG{o}{.}\PYG{n}{word\PYGZus{}tokenize}\PYG{p}{(}\PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{most\PYGZus{}common}\PYG{p}{))}
+	\PYG{n}{singles} \PYG{o}{=} \PYG{p}{[}\PYG{n}{stemmer}\PYG{o}{.}\PYG{n}{stem}\PYG{p}{(}\PYG{n}{plural}\PYG{p}{)} \PYG{k}{for} \PYG{n}{plural} \PYG{o+ow}{in} \PYG{n}{most\PYGZus{}common\PYGZus{}stems}\PYG{p}{]}
+	\PYG{n}{word\PYGZus{}stems} \PYG{o}{=} \PYG{n+nb}{set}\PYG{p}{(}\PYG{n}{singles}\PYG{p}{)}
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{} \PYGZsq{}}\PYG{o}{.}\PYG{n}{join}\PYG{p}{(}\PYG{n}{singles}\PYG{p}{))}
+\end{Verbatim}

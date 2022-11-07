@@ -1,0 +1,19 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{chunk\PYGZus{}size} \PYG{o}{=} \PYG{l+m+mi}{128}
+
+\PYG{k}{def} \PYG{n+nf}{group\PYGZus{}texts}\PYG{p}{(}\PYG{n}{examples}\PYG{p}{):}
+\PYG{c+c1}{\PYGZsh{} Concatenate all texts}
+\PYG{n}{concatenated\PYGZus{}examples} \PYG{o}{=} \PYG{p}{\PYGZob{}}\PYG{n}{k}\PYG{p}{:} \PYG{n+nb}{sum}\PYG{p}{(}\PYG{n}{examples}\PYG{p}{[}\PYG{n}{k}\PYG{p}{],} \PYG{p}{[])} \PYG{k}{for} \PYG{n}{k} \PYG{o+ow}{in} \PYG{n}{examples}\PYG{o}{.}\PYG{n}{keys}\PYG{p}{()\PYGZcb{}}
+\PYG{c+c1}{\PYGZsh{} Compute length of concatenated texts}
+\PYG{n}{total\PYGZus{}length} \PYG{o}{=} \PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{concatenated\PYGZus{}examples}\PYG{p}{[}\PYG{n+nb}{list}\PYG{p}{(}\PYG{n}{examples}\PYG{o}{.}\PYG{n}{keys}\PYG{p}{())[}\PYG{l+m+mi}{0}\PYG{p}{]])}
+\PYG{c+c1}{\PYGZsh{} We drop the last chunk if it\PYGZsq{}s smaller than chunk\PYGZus{}size}
+\PYG{n}{total\PYGZus{}length} \PYG{o}{=} \PYG{p}{(}\PYG{n}{total\PYGZus{}length} \PYG{o}{//} \PYG{n}{chunk\PYGZus{}size}\PYG{p}{)} \PYG{o}{*} \PYG{n}{chunk\PYGZus{}size}
+\PYG{c+c1}{\PYGZsh{} Split by chunks of max\PYGZus{}len}
+\PYG{n}{result} \PYG{o}{=} \PYG{p}{\PYGZob{}}
+	\PYG{n}{k}\PYG{p}{:} \PYG{p}{[}\PYG{n}{t}\PYG{p}{[}\PYG{n}{i} \PYG{p}{:} \PYG{n}{i} \PYG{o}{+} \PYG{n}{chunk\PYGZus{}size}\PYG{p}{]} \PYG{k}{for} \PYG{n}{i} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{n}{total\PYGZus{}length}\PYG{p}{,} \PYG{n}{chunk\PYGZus{}size}\PYG{p}{)]}
+	\PYG{k}{for} \PYG{n}{k}\PYG{p}{,} \PYG{n}{t} \PYG{o+ow}{in} \PYG{n}{concatenated\PYGZus{}examples}\PYG{o}{.}\PYG{n}{items}\PYG{p}{()}
+\PYG{p}{\PYGZcb{}}
+\PYG{c+c1}{\PYGZsh{} Create a new labels column}
+\PYG{n}{result}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}labels\PYGZdq{}}\PYG{p}{]} \PYG{o}{=} \PYG{n}{result}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}input\PYGZus{}ids\PYGZdq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{copy}\PYG{p}{()}
+\PYG{k}{return} \PYG{n}{result}
+\end{Verbatim}

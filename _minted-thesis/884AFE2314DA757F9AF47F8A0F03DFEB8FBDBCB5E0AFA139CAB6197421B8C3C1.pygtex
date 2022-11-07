@@ -1,0 +1,20 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{def} \PYG{n+nf}{compute\PYGZus{}loss}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{n}{model}\PYG{p}{,} \PYG{n}{inputs}\PYG{p}{,} \PYG{n}{return\PYGZus{}outputs}\PYG{o}{=}\PYG{k+kc}{False}\PYG{p}{):}
+	\PYG{k}{if} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{label\PYGZus{}smoother} \PYG{o+ow}{is} \PYG{o+ow}{not} \PYG{k+kc}{None} \PYG{o+ow}{and} \PYG{l+s+s2}{\PYGZdq{}labels\PYGZdq{}} \PYG{o+ow}{in} \PYG{n}{inputs}\PYG{p}{:}
+		\PYG{n}{labels} \PYG{o}{=} \PYG{n}{inputs}\PYG{o}{.}\PYG{n}{pop}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}labels\PYGZdq{}}\PYG{p}{)}
+	\PYG{k}{else}\PYG{p}{:}
+	\PYG{n}{labels} \PYG{o}{=} \PYG{k+kc}{None}
+	\PYG{n}{outputs} \PYG{o}{=} \PYG{n}{model}\PYG{p}{(}\PYG{o}{**}\PYG{n}{inputs}\PYG{p}{)}
+	\PYG{c+c1}{\PYGZsh{} Save past state if it exists}
+	\PYG{k}{if} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{args}\PYG{o}{.}\PYG{n}{past\PYGZus{}index} \PYG{o}{\PYGZgt{}=} \PYG{l+m+mi}{0}\PYG{p}{:}
+		\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{\PYGZus{}past} \PYG{o}{=} \PYG{n}{outputs}\PYG{p}{[}\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{args}\PYG{o}{.}\PYG{n}{past\PYGZus{}index}\PYG{p}{]}
+	
+	\PYG{k}{if} \PYG{n}{labels} \PYG{o+ow}{is} \PYG{o+ow}{not} \PYG{k+kc}{None}\PYG{p}{:}
+		\PYG{n}{loss} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{label\PYGZus{}smoother}\PYG{p}{(}\PYG{n}{outputs}\PYG{p}{,} \PYG{n}{labels}\PYG{p}{)}
+	\PYG{k}{else}\PYG{p}{:}
+	\PYG{c+c1}{\PYGZsh{} We don\PYGZsq{}t use .loss here since the model may return tuples}
+	\PYG{c+c1}{\PYGZsh{} instead of ModelOutput.}
+	\PYG{n}{loss} \PYG{o}{=} \PYG{n}{outputs}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}loss\PYGZdq{}}\PYG{p}{]} \PYG{k}{if} \PYG{n+nb}{isinstance}\PYG{p}{(}\PYG{n}{outputs}\PYG{p}{,} \PYG{n+nb}{dict}\PYG{p}{)} \PYG{k}{else} \PYG{n}{outputs}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}
+	
+	\PYG{k}{return} \PYG{p}{(}\PYG{n}{loss}\PYG{p}{,} \PYG{n}{outputs}\PYG{p}{)} \PYG{k}{if} \PYG{n}{return\PYGZus{}outputs} \PYG{k}{else} \PYG{n}{loss}
+\end{Verbatim}

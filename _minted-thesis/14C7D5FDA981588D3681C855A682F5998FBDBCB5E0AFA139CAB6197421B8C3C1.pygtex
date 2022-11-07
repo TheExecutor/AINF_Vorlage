@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{training\PYGZus{}args} \PYG{o}{=} \PYG{n}{TrainingArguments}\PYG{p}{(}
+\PYG{l+s+s2}{\PYGZdq{}checkpoint\PYGZus{}LM\PYGZus{}s2\PYGZus{}s2orc\PYGZdq{}}\PYG{p}{,}
+\PYG{n}{evaluation\PYGZus{}strategy} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}epoch\PYGZdq{}}\PYG{p}{,}
+\PYG{n}{learning\PYGZus{}rate}\PYG{o}{=}\PYG{l+m+mf}{2e\PYGZhy{}5}\PYG{p}{,}
+\PYG{n}{weight\PYGZus{}decay}\PYG{o}{=}\PYG{l+m+mf}{0.01}\PYG{p}{,}
+\PYG{n}{report\PYGZus{}to}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}tensorboard,}
+\PYG{n}{logging\PYGZus{}strategy}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}steps\PYGZdq{}}
+\PYG{p}{)}
+\end{Verbatim}

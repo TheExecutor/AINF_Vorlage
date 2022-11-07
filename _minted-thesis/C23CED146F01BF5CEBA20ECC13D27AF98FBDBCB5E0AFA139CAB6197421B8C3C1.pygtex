@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+	\PYG{n}{model} \PYG{o}{=} \PYG{n}{BertModel}\PYG{o}{.}\PYG{n}{from\PYGZus{}pretrained}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}/path/to/model/\PYGZdq{}}\PYG{p}{)}
+	\PYG{n}{tokenizer} \PYG{o}{=} \PYG{n}{BertTokenizer}\PYG{p}{(}\PYG{n}{vocab\PYGZus{}file} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}../path/to/tokeizer/vocab.txt\PYGZsq{}}\PYG{p}{)}
+\end{Verbatim}

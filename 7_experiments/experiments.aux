@@ -1,0 +1,97 @@
+\relax 
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Experiments}{17}{}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{chapter:experiments}{{5}{17}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Tokenization of the dataset}{17}{}\protected@file@percent }
+\@writefile{lol}{\contentsline {listing}{\numberline {1}{\ignorespaces Creating the Dataset Dictionary\relax }}{17}{}\protected@file@percent }
+\newlabel{code:dict}{{1}{17}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Format of Dataset Dictionary\relax }}{17}{}\protected@file@percent }
+\newlabel{fig:dict_features}{{5.1}{17}}
+\@writefile{lol}{\contentsline {listing}{\numberline {2}{\ignorespaces Tokenize Function to call on the text\relax }}{17}{}\protected@file@percent }
+\newlabel{code:tok_funct}{{2}{17}}
+\@writefile{lol}{\contentsline {listing}{\numberline {3}{\ignorespaces Applying the tokenize function on the Text\relax }}{18}{}\protected@file@percent }
+\newlabel{code:tok_map}{{3}{18}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces Text collumn has been replaced by calling tokenizer on the dataset.\relax }}{18}{}\protected@file@percent }
+\newlabel{fig:dict_tokenized}{{5.2}{18}}
+\@writefile{lol}{\contentsline {listing}{\numberline {4}{\ignorespaces Definition of the method group\_text\relax }}{18}{}\protected@file@percent }
+\newlabel{code:group_text}{{4}{18}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Training of the Tokenizer}{19}{}\protected@file@percent }
+\newlabel{sec:tokenizer}{{5.2}{19}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}Extending the tokenizers vocabulary}{19}{}\protected@file@percent }
+\@writefile{lol}{\contentsline {listing}{\numberline {5}{\ignorespaces Extending the Tokenizer Vocabulary\relax }}{19}{}\protected@file@percent }
+\newlabel{code:extend_tokenizer}{{5}{19}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.2}Pre-Training the tokenizer}{19}{}\protected@file@percent }
+\@writefile{lol}{\contentsline {listing}{\numberline {6}{\ignorespaces Training the Tokenizer and resize Vocabulary\relax }}{20}{}\protected@file@percent }
+\newlabel{code:train_tokenizer}{{6}{20}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}Training Process}{20}{}\protected@file@percent }
+\@writefile{lol}{\contentsline {listing}{\numberline {7}{\ignorespaces Creating the Training Arguments\relax }}{20}{}\protected@file@percent }
+\newlabel{code:train_args}{{7}{20}}
+\@writefile{lol}{\contentsline {listing}{\numberline {8}{\ignorespaces Creating the Trainer Object\relax }}{21}{}\protected@file@percent }
+\newlabel{code:trainer}{{8}{21}}
+\@writefile{lol}{\contentsline {listing}{\numberline {9}{\ignorespaces Starting the training\relax }}{21}{}\protected@file@percent }
+\newlabel{code:train}{{9}{21}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.1}Moving the bias towards FA domain}{21}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces Loss Function during Training with Infineon Dataset and small trained tokenizer.\relax }}{21}{}\protected@file@percent }
+\newlabel{fig:loss_small}{{5.3}{21}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces Loss Function during Training with Infineon Dataset and large trained tokenizer.\relax }}{22}{}\protected@file@percent }
+\newlabel{fig:loss_large}{{5.4}{22}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces Loss Function during Training with Infineon Dataset and extended tokenizer.\relax }}{22}{}\protected@file@percent }
+\newlabel{fig:loss_ext}{{5.5}{22}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.6}{\ignorespaces Loss Function during Training with tokenizer trained on s2.\relax }}{23}{}\protected@file@percent }
+\newlabel{fig:loss_s2}{{5.6}{23}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.7}{\ignorespaces Loss Function during Training with largest dataset and tokenizer trained on large.\relax }}{23}{}\protected@file@percent }
+\newlabel{fig:loss_large_large}{{5.7}{23}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.2}Trying different types of losses}{23}{}\protected@file@percent }
+\@writefile{lol}{\contentsline {listing}{\numberline {10}{\ignorespaces Trainer compute loss function\relax }}{24}{}\protected@file@percent }
+\newlabel{code:loss}{{10}{24}}
+\@writefile{lol}{\contentsline {listing}{\numberline {11}{\ignorespaces Cross Entropy Loss\relax }}{24}{}\protected@file@percent }
+\newlabel{code:cel}{{11}{24}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.3}Changing the Masking Method}{25}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5.8}{\ignorespaces Loss Function during Training with Infineon Dataset and large trained tokenizer.\relax }}{25}{}\protected@file@percent }
+\newlabel{fig:data_wordids}{{5.8}{25}}
+\@writefile{lol}{\contentsline {listing}{\numberline {12}{\ignorespaces Data Collator implementing Whole Word Masking\relax }}{25}{}\protected@file@percent }
+\newlabel{code:wwm}{{12}{25}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.9}{\ignorespaces Example of Whole Word Masking Method.\relax }}{26}{}\protected@file@percent }
+\newlabel{fig:wwm_ex}{{5.9}{26}}
+\@writefile{lol}{\contentsline {listing}{\numberline {13}{\ignorespaces Trainer\relax }}{26}{}\protected@file@percent }
+\newlabel{code:trainer_wwm}{{13}{26}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.10}{\ignorespaces Loss Function during Training with Whole Word Masking.\relax }}{27}{}\protected@file@percent }
+\newlabel{fig:loss_wwm}{{5.10}{27}}
+\@setckpt{7_experiments/experiments}{
+\setcounter{page}{28}
+\setcounter{equation}{0}
+\setcounter{enumi}{5}
+\setcounter{enumii}{0}
+\setcounter{enumiii}{0}
+\setcounter{enumiv}{0}
+\setcounter{footnote}{0}
+\setcounter{mpfootnote}{0}
+\setcounter{part}{0}
+\setcounter{chapter}{5}
+\setcounter{section}{3}
+\setcounter{subsection}{3}
+\setcounter{subsubsection}{0}
+\setcounter{paragraph}{0}
+\setcounter{subparagraph}{0}
+\setcounter{figure}{10}
+\setcounter{table}{0}
+\setcounter{parentequation}{0}
+\setcounter{lstnumber}{1}
+\setcounter{float@type}{16}
+\setcounter{@todonotes@numberoftodonotes}{0}
+\setcounter{FancyVerbLine}{7}
+\setcounter{linenumber}{1}
+\setcounter{LN@truepage}{37}
+\setcounter{FV@TrueTabGroupLevel}{0}
+\setcounter{FV@TrueTabCounter}{0}
+\setcounter{FV@HighlightLinesStart}{0}
+\setcounter{FV@HighlightLinesStop}{0}
+\setcounter{FancyVerbLineBreakLast}{0}
+\setcounter{minted@FancyVerbLineTemp}{30}
+\setcounter{minted@pygmentizecounter}{18}
+\setcounter{listing}{13}
+\setcounter{caption@flags}{2}
+\setcounter{continuedfloat}{0}
+\setcounter{lstlisting}{0}
+}

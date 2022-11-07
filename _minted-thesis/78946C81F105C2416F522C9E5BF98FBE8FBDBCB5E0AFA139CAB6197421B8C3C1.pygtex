@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{def} \PYG{n+nf}{tokenize\PYGZus{}function}\PYG{p}{(}\PYG{n}{examples}\PYG{p}{):}
+\PYG{k}{return} \PYG{n}{tokenizer}\PYG{p}{(}\PYG{n}{examples}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}text\PYGZdq{}}\PYG{p}{])}
+\end{Verbatim}

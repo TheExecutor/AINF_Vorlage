@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{from} \PYG{n+nn}{datasets} \PYG{k+kn}{import} \PYG{n}{Dataset}
+\PYG{n}{training\PYGZus{}data} \PYG{o}{=} \PYG{n}{Dataset}\PYG{o}{.}\PYG{n}{from\PYGZus{}dict}\PYG{p}{(}\PYG{n}{df}\PYG{p}{)}
+\PYG{n}{datasets} \PYG{o}{=} \PYG{n}{datasets}\PYG{o}{.}\PYG{n}{DatasetDict}\PYG{p}{(\PYGZob{}}\PYG{l+s+s2}{\PYGZdq{}train\PYGZdq{}}\PYG{p}{:} \PYG{n}{train\PYGZus{}data}\PYG{p}{\PYGZcb{})}
+\end{Verbatim}

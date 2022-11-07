@@ -29,6 +29,9 @@
 \usepackage{float}
 \usepackage{easyReview}
 \usepackage{minted}
+\usepackage{caption}
+
+\newenvironment{code}{\captionsetup{type=listing}}{}
 
 %-----------------------------------------------------------------------------------------------------------------------------------------
 % Silbentrennung
@@ -556,10 +559,12 @@ xrightmargin=1.5mm,
 
 \include{1_introduction/introduction}
 \include{3_literaturereview/literaturereview}
-\include{4_datacollection/datacollection}
 \include{2_analysis/analysis}
+\include{4_datacollection/datacollection}
+\include{7_experiments/experiments}
 \include{5_resultsevaluation/results}
 \include{6_conclusion/conclusion}
+
 
 %\include{tipps/tipps}
 %\include{smartcards/smartcards}

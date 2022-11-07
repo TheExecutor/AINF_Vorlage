@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+	\PYG{c+c1}{\PYGZsh{} Run tokenizer.}
+	\PYG{n}{tokenized\PYGZus{}word} \PYG{o}{=} \PYG{n}{s2orc\PYGZus{}scibert\PYGZus{}tokenizer}\PYG{o}{.}\PYG{n}{tokenize}\PYG{p}{(}\PYG{n}{word}\PYG{p}{)}
+	
+	\PYG{c+c1}{\PYGZsh{}differentiate good and badly tokenized words}
+	\PYG{k}{if} \PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{tokenized\PYGZus{}word}\PYG{p}{)} \PYG{o}{==} \PYG{l+m+mi}{2}\PYG{p}{:}
+		\PYG{n}{good\PYGZus{}tokenized\PYGZus{}words\PYGZus{}s2orc} \PYG{o}{+=} \PYG{l+m+mi}{1}
+		\PYG{n}{good\PYGZus{}words}\PYG{o}{.}\PYG{n}{extend}\PYG{p}{(}\PYG{n}{tokenized\PYGZus{}word}\PYG{p}{)}
+	\PYG{k}{elif} \PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{tokenized\PYGZus{}word\PYGZus{}c}\PYG{p}{)} \PYG{o}{\PYGZgt{}} \PYG{l+m+mi}{2}\PYG{p}{:}
+		\PYG{n}{badly\PYGZus{}tokenized\PYGZus{}words\PYGZus{}s2orc} \PYG{o}{+=} \PYG{l+m+mi}{1}
+		\PYG{n}{bad\PYGZus{}words}\PYG{o}{.}\PYG{n}{extend}\PYG{p}{(}\PYG{n}{tokenized\PYGZus{}word}\PYG{p}{)}
+\end{Verbatim}

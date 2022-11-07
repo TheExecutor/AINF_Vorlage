@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{tokenized\PYGZus{}datasets} \PYG{o}{=} \PYG{n}{datasets}\PYG{o}{.}\PYG{n}{map}\PYG{p}{(}\PYG{n}{tokenize\PYGZus{}function}\PYG{p}{,} \PYG{n}{batched}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{,} \PYG{n}{num\PYGZus{}proc}\PYG{o}{=}\PYG{l+m+mi}{4}\PYG{p}{,}
+	\PYG{n}{remove\PYGZus{}columns}\PYG{o}{=}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}text\PYGZdq{}}\PYG{p}{])}
+\end{Verbatim}

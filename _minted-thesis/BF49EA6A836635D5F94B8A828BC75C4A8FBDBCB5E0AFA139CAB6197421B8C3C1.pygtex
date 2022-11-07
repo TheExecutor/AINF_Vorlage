@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+	\PYG{k}{for} \PYG{n}{keyword} \PYG{o+ow}{in} \PYG{n}{keywords}\PYG{p}{:}
+		\PYG{n}{tokenizer}\PYG{o}{.}\PYG{n}{add\PYGZus{}tokens}\PYG{p}{(}\PYG{n}{keyword}\PYG{p}{)}
+\end{Verbatim}
