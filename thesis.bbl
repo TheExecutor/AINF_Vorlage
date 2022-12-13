@@ -4,9 +4,6 @@
 J.~D.~M. Ashbourn: {Biometrics : Advanced Identify Verification: The Complete
   Guide}. Springer Verlag (2000).
 
-\bibitem[BeKH01]{BeKH01}
-K.~Beuth, G.~Kurz, R.~Hanebuth: {Nachrichtentechnik}. {Vogel Fachbuch},
-  {Vogel-Verlag KG.}, Würzburg (2001).
 
 \bibitem[BeKP91]{BeKP91}
 A.~Beutelspacher, A.~G. Kersten, A.~Pfau: {Chipkarten als Sicherheitswerkzeug}.
@@ -49,14 +46,6 @@ NIST: {Data Encryption Standard}, \emph{Federal information processing
 NIST: {FIPS PUB 186-2} {Digital Signature Standard (DSS)}. {National Institute
   for Standards and Technology}, {Gaithersburg, MD, USA} (2000),
   \urlprefix\url{http://www.itl.nist.gov/fipspubs/fip186-2.pdf}.
-
-\bibitem[RaEf02]{HandChip}
-W.~Rankl, W.~Effing: Handbuch der Chipkarten. Carl Hanser Verlag München Wien
-  (2002), 4., überarbeitete und aktualisierte Auflage.
-
-\bibitem[Rank06]{ChipAnw}
-W.~Rankl: Chipkartenanwendungen. Carl Hanser Verlag München Wien (2006),
-  entwurfsmuster für Einsatz und Programmierung von Chipkarten.
 
 \bibitem[RiSA78]{RSA}
 R.~L. Rivest, A.~Shamir, L.~M. Adleman: A Method for Obtaining Digital

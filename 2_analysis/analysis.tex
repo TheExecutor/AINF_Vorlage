@@ -1,8 +1,20 @@
-\chapter{Analysis} \label{chapter:analysis}
+\chapter{Selection of Language Model} \label{chapter:analysis}
 This chapter will cover the first two research questions about existing BERT models and how well they fit to the semiconductor domain. In this way we were able to find a suitable entrypoint for training our FA-BERT model.
-\section{BERT based Language Models}
 
-\section{Finding the Model Entrypoint}
+\section{Overview of BERT based Models}
+
+\subsection{RoBERTa}
+
+\subsection{Med-BERT}
+
+\subsection{SciBERT}
+The development of BERT was a milestone in Natural language processing. Since the vocabulary of BERT is restricted, the application of the model in some domains does not lead to a satisfactory performance. To achieve this goal in different scientific fields, the model of BERT got adapted to SciBERT. The SciBERT model follows the same architecture as BERT but is instead pre-trained on scientific text. The corpus consists of 1,14M papers derived from \textit{Google Scholar}, 18\% papers from the computer science domain and 82\% from the broad biomedical domain. The authors used the full text of the papers instead of only the abstracts. The average paper length is 154 sentences which results in 2.769 tokens. The final corpus size has 3.17B tokens, similar to the 3.3B tokens on which BERT was trained \cite{Beltagy}. \newline
+
+The S2ORC-SciBERT is a SciBERT model which was further trained on the S2ORC dataset presented above. It got published simultaneously with the dataset itself from the same developers. Compared to SciBERT it has a wider corpus including 20 different domains like Computer Science, Mathematical Science and Engineering which could be beneficial for the FA domain. However it was also trained on Medical and Biology data which again could be a drawback for the model as with SciBERT.
+
+\subsection{S2ORC-SciBERT}
+
+\section{Choosing the Model Entrypoint}
 Since BERT models studied in this paper were trained on different text corpora, their tokenizers might provide different coverage of important terms used in the FA domain, such as the ones stored in FA ontology. To determine the coverage, we first analyze the tokenization of the ontology keywords with the three language models: traditional BERT, SciBERT and S2ORC-SciBERT. With this analysis it was possible to gain a first impression about the vocabulary of the models and how well they fit to the electrical domain. \newline
 The models got downloaded from the website \alert{Huggingface} and can be load into the notebook as follows:
 \begin{minted}{python}
