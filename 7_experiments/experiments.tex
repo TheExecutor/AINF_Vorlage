@@ -116,7 +116,7 @@ Before extending the tokenizer, it's vocabulary had a size of 31944. To add the 
 
 The keywords got added to the vocabulary and increased the vocabulary size to 32131. After saving the tokenizer it can be used in the training process like any other pretrained tokenizer.
 
-\subsection{Pre-Training the tokenizer}
+\subsection{Pre-Training the tokenizer}\label{chapter:training-tokenizer}
 Training a tokenizer is very simple with the\alert{ huggingface} methods. To train a tokenizer we first need to create a training dataset again. This dataset should have the same format as already discribed in chapter \ref{chapter:datacollection}. For our experiments, we assembled four different datasets to train four tokenizers. These were then to be trained together with the language model in different tests. The different data sets were used for testing purposes to find the best possible model.
 
 \alert{creating of the training corpus}
@@ -185,7 +185,7 @@ trainer.train()
 \end{minted}
 \end{code}
 
-\subsection{Moving the bias towards FA domain}
+\subsection{Moving the bias towards FA domain}\label{chapter:training-experiments}
 In the first training experiments it was our goal to move the bias of the pretrained S2ORC-SciBERT further towards the semiconductor and failure analysis domain. Therefore we use different datasets. 
 
 \alert{discribe datasets here}
@@ -196,8 +196,10 @@ For later discussions and easier use we introduce the following abbreviations:
 	\item s2: S2ORC dataset filtered on keywords
 \end{itemize}
 
-For the first few experiments we used the inf dataset together with the different trained and extended tokenizers explained in section \ref{sec:tokenizer}. The inf dataset should be a good complement to the BERT based model which has already been pre-trained with the S2ORC dataset. With the help of the trained tokenizers, this training material should prepare for the classification of FA reports. We trained the models for 10 epochs and a learning rate of 2e-5 as described in Listing \ref{code:trainer}.
+For the first few experiments we used the inf dataset together with the different trained and extended tokenizers explained in section \ref{sec:tokenizer}. The inf dataset should be a good complement to the BERT based model which has already been pre-trained with the S2ORC dataset. With the help of the trained tokenizers, this training material should prepare for the classification of FA reports. We trained the models for 10 epochs and a learning rate of 2e-5 as described in Listing \ref{code:trainer}. In the descriptions of the following experiments we refer to the abbreviations described in section \ref{chapter:training-tokenizer} and section \ref{chapter:training-experiments}. \newline
 
+\textbf{Experiment 1:}\\
+For the first experiment we trained the S2ORC-SciBERT with the \textit{inf} dataset and used the pre-trained tokenizer \textit{small} for 10 epochs. We started with a loss of about 8. The loss curve falls steadily. A small hill can be seen in the area around 40k steps. This indicates that the model was not training optimally at this point and had to adjust its weights. After 10 epochs the loss reached a value of 3.471.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\textwidth]{figures/loss_inf_small.png}
@@ -205,6 +207,8 @@ For the first few experiments we used the inf dataset together with the differen
 	\label{fig:loss_small}
 \end{figure}
 
+\textbf{Experiment 2:}\\
+In the second experiment we used the \textit{inf} dataset again together with the pre-trained tokenizer \textit{large} for 10 epochs. We started with a loss of about 8.5. The loss curve falls steeper at the beginning before it flattens out. Although the training seemed promising, int the end the loss reached again a value of 3.471 after 10 epochs.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\textwidth]{figures/loss_inf_large.png}
@@ -212,6 +216,8 @@ For the first few experiments we used the inf dataset together with the differen
 	\label{fig:loss_large}
 \end{figure}
 
+\textbf{Experiment 3:}\\
+To compare a pre-trained tokenizer with the extended tokenizer approach, we used the \textit{ext} tokenizer together with the \text{inf} dataset in experiment three. The loss curve behaves similarly to that of experiment two. In the end it flattens out at a loss value of 3.475, which is slightly higher than in experiment one and two.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\textwidth]{figures/loss_inf_ext.png}
@@ -219,6 +225,8 @@ For the first few experiments we used the inf dataset together with the differen
 	\label{fig:loss_ext}
 \end{figure}
 
+\textbf{Experiment 4:}\\
+For experiment four we went for a bigger dataset, \textit{inf} dataset combined with \textit{s2} dataset, and trained it together with the tokenizer \text{flt} which is the one with the largest vocabulary. Surprisingly, the loss curve hardly changes at all and flattens out at a loss value of again 3.471 after 10 epochs.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\textwidth]{figures/loss_infs2_s2.png}
@@ -226,6 +234,8 @@ For the first few experiments we used the inf dataset together with the differen
 	\label{fig:loss_s2}
 \end{figure}
 
+\textbf{Experiment 5:}\\
+As for the last experiments the loss curve hardly changed, we decided to increase the number of training epochs to 15. We sticked with the combination fo the datasets \textit{inf} and \textit{s2} and used the tokenizer \textit{large} as it showed the steepest loss curve at the beginning. The additional 5 epochs showed an improvement compared to the previous training sessions, the loss courve flattens out at a value of 3.088.
 \alert{Bild später ersetzen}
 \begin{figure}[H]
 	\centering
@@ -296,7 +306,7 @@ Based on the latest experiments, it can be seen that our models are not sufficie
 \alert{nicht vergessen tokenizer map funktion geändert damit word ids im dataset}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.6\textwidth]{figures/tok_dataset_wordids.png}
+	\includegraphics[width=1\textwidth]{figures/tok_dataset_wordids.png}
 	\caption{Loss Function during Training with Infineon Dataset and large trained tokenizer.}
 	\label{fig:data_wordids}
 \end{figure}

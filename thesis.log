@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.7.14)  12 DEC 2022 17:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.7.14)  19 DEC 2022 13:09
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -961,6 +961,9 @@ File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
 ) (thesis.aux (1_introduction/introduction.aux)
 (3_literaturereview/literaturereview.aux
 
+LaTeX Warning: Label `tab:onehot' multiply defined.
+
+
 LaTeX Warning: Label `fig:bert_tokenizing' multiply defined.
 
 ) (2_analysis/analysis.aux) (4_datacollection/datacollection.aux)
@@ -1122,53 +1125,60 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 11--14
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 18--23
-
- []
-
+<figures/fa_process.png, id=48, 332.9238pt x 433.62pt>
+File: figures/fa_process.png Graphic file (type png)
+<use figures/fa_process.png>
+Package pdftex.def Info: figures/fa_process.png  used on input line 10.
+(pdftex.def)             Requested size: 136.50139pt x 177.78534pt.
 [1
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 34--38
+<figures/ai_process_idea.png, id=53, 584.9052pt x 454.3374pt>
+File: figures/ai_process_idea.png Graphic file (type png)
+<use figures/ai_process_idea.png>
+Package pdftex.def Info: figures/ai_process_idea.png  used on input line 19.
+(pdftex.def)             Requested size: 273.00278pt x 212.0689pt.
+
+Overfull \vbox (1.26006pt too high) has occurred while \output is active []
+
+
+[2 <./figures/fa_process.png> <./figures/ai_process_idea.png>]
+<figures/fa_bert_process.png, id=59, 936.6192pt x 417.7206pt>
+File: figures/fa_bert_process.png Graphic file (type png)
+<use figures/fa_bert_process.png>
+Package pdftex.def Info: figures/fa_bert_process.png  used on input line 28.
+(pdftex.def)             Requested size: 455.0pt x 202.92569pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--41
 
  []
 
-)
+
 Overfull \vbox (1.26006pt too high) has occurred while \output is active []
 
 
-[2]
+[3 <./figures/fa_bert_process.png>])
 Overfull \vbox (1.26006pt too high) has occurred while \output is active []
 
 
-[3]
+[4]
 \openout2 = `3_literaturereview/literaturereview.aux'.
 
  (3_literaturereview/literaturereview.tex
-Overfull \vbox (1.26006pt too high) has occurred while \output is active []
+Chapter 2.
 
+Underfull \hbox (badness 10000) in paragraph at lines 9--11
 
-[4
+ []
+
+[5
 
 
 
 
 ]
-Chapter 2.
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--11
-
- []
-
-[5]
 Overfull \vbox (1.26006pt too high) has occurred while \output is active []
 
 
@@ -1177,21 +1187,21 @@ Overfull \vbox (1.26006pt too high) has occurred while \output is active []
 
 
 [7]
-<figures/transformer_architecture.png, id=71, 402.50375pt x 583.17876pt>
+<figures/transformer_architecture.png, id=78, 402.50375pt x 583.17876pt>
 File: figures/transformer_architecture.png Graphic file (type png)
 <use figures/transformer_architecture.png>
 Package pdftex.def Info: figures/transformer_architecture.png  used on input li
-ne 112.
+ne 133.
 (pdftex.def)             Requested size: 227.5pt x 329.62119pt.
 
 Overfull \vbox (1.26006pt too high) has occurred while \output is active []
 
 
 [8]
-<figures/timeline_NLP.PNG, id=75, 556.57938pt x 240.9pt>
+<figures/timeline_NLP.PNG, id=82, 556.57938pt x 240.9pt>
 File: figures/timeline_NLP.PNG Graphic file (type png)
 <use figures/timeline_NLP.PNG>
-Package pdftex.def Info: figures/timeline_NLP.PNG  used on input line 122.
+Package pdftex.def Info: figures/timeline_NLP.PNG  used on input line 143.
 (pdftex.def)             Requested size: 455.0pt x 196.93643pt.
 
 Overfull \vbox (1.26006pt too high) has occurred while \output is active []
@@ -1199,22 +1209,22 @@ Overfull \vbox (1.26006pt too high) has occurred while \output is active []
 
 [9 <./figures/transformer_architecture.png (PNG copy)>]
 
-LaTeX Warning: Citation `Devlin' on page 10 undefined on input line 132.
+LaTeX Warning: Citation `Devlin' on page 10 undefined on input line 153.
 
 
 Overfull \vbox (1.26006pt too high) has occurred while \output is active []
 
 
 [10 <./figures/timeline_NLP.PNG>]
-<figures/bert_tokenizing.png, id=85, 840.13875pt x 247.42438pt>
+<figures/bert_tokenizing.png, id=91, 840.13875pt x 247.42438pt>
 File: figures/bert_tokenizing.png Graphic file (type png)
 <use figures/bert_tokenizing.png>
-Package pdftex.def Info: figures/bert_tokenizing.png  used on input line 143.
+Package pdftex.def Info: figures/bert_tokenizing.png  used on input line 164.
 (pdftex.def)             Requested size: 455.0pt x 133.9998pt.
-<figures/bert_training.png, id=86, 722.7pt x 289.08pt>
+<figures/bert_training.png, id=92, 722.7pt x 289.08pt>
 File: figures/bert_training.png Graphic file (type png)
 <use figures/bert_training.png>
-Package pdftex.def Info: figures/bert_training.png  used on input line 150.
+Package pdftex.def Info: figures/bert_training.png  used on input line 171.
 (pdftex.def)             Requested size: 455.0pt x 182.00226pt.
 
 Overfull \vbox (1.26006pt too high) has occurred while \output is active []
@@ -1261,7 +1271,7 @@ File: ts1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/lmtt/b/n' tried instead on input line 6.
 )
-<figures/example_good_bad.PNG, id=97, 167.62625pt x 218.8175pt>
+<figures/example_good_bad.PNG, id=103, 167.62625pt x 218.8175pt>
 File: figures/example_good_bad.PNG Graphic file (type png)
 <use figures/example_good_bad.PNG>
 Package pdftex.def Info: figures/example_good_bad.PNG  used on input line 45.
@@ -1276,7 +1286,7 @@ Overfull \vbox (1.26006pt too high) has occurred while \output is active []
 
 (_minted-thesis/FED4F62B7D57A66B6F20E63D05FADAC28FBDBCB5E0AFA139CAB6197421B8C3C
 1.pygtex)
-<figures/keyword_comparison.PNG, id=104, 244.41313pt x 53.19875pt>
+<figures/keyword_comparison.PNG, id=110, 244.41313pt x 53.19875pt>
 File: figures/keyword_comparison.PNG Graphic file (type png)
 <use figures/keyword_comparison.PNG>
 Package pdftex.def Info: figures/keyword_comparison.PNG  used on input line 69.
@@ -1287,7 +1297,7 @@ Overfull \vbox (1.26006pt too high) has occurred while \output is active []
 
 
 [15 <./figures/example_good_bad.PNG> <./figures/keyword_comparison.PNG>]
-<figures/wordstems_comparison.PNG, id=111, 106.3975pt x 72.27pt>
+<figures/wordstems_comparison.PNG, id=117, 106.3975pt x 72.27pt>
 File: figures/wordstems_comparison.PNG Graphic file (type png)
 <use figures/wordstems_comparison.PNG>
 Package pdftex.def Info: figures/wordstems_comparison.PNG  used on input line 8
@@ -1312,52 +1322,59 @@ Chapter 4.
 
 
 ]
-<figures/S2ORC_Domains.PNG, id=121, 249.43187pt x 232.36812pt>
+<figures/S2ORC_Domains.PNG, id=127, 249.43187pt x 232.36812pt>
 File: figures/S2ORC_Domains.PNG Graphic file (type png)
 <use figures/S2ORC_Domains.PNG>
-Package pdftex.def Info: figures/S2ORC_Domains.PNG  used on input line 21.
+Package pdftex.def Info: figures/S2ORC_Domains.PNG  used on input line 20.
 (pdftex.def)             Requested size: 273.00278pt x 254.35054pt.
 
 Overfull \vbox (1.26006pt too high) has occurred while \output is active []
 
 
-[18]
+[18 <./figures/S2ORC_Domains.PNG>]
+<figures/s2orc_filtered.PNG, id=132, 350.81062pt x 252.945pt>
+File: figures/s2orc_filtered.PNG Graphic file (type png)
+<use figures/s2orc_filtered.PNG>
+Package pdftex.def Info: figures/s2orc_filtered.PNG  used on input line 29.
+(pdftex.def)             Requested size: 273.00278pt x 196.85631pt.
+
 Overfull \vbox (1.26006pt too high) has occurred while \output is active []
 
 
-[19 <./figures/S2ORC_Domains.PNG>]
+[19 <./figures/s2orc_filtered.PNG>]
+<figures/datasets.PNG, id=137, 470.25688pt x 137.51375pt>
+File: figures/datasets.PNG Graphic file (type png)
+<use figures/datasets.PNG>
+Package pdftex.def Info: figures/datasets.PNG  used on input line 56.
+(pdftex.def)             Requested size: 455.0pt x 133.05244pt.
+
 Overfull \vbox (1.26006pt too high) has occurred while \output is active []
 
 
-[20]
+[20 <./figures/datasets.PNG>]
 \openout4 = `thesis.pyg'.
 
 
 (_minted-thesis/36FCF5501599EE97423FF79752ACF77F8FBDBCB5E0AFA139CAB6197421B8C3C
-1.pygtex))
+1.pygtex
 Overfull \vbox (1.26006pt too high) has occurred while \output is active []
 
 
-[21]
+[21]))
+Overfull \vbox (1.26006pt too high) has occurred while \output is active []
+
+
+[22]
 \openout2 = `7_experiments/experiments.aux'.
 
  (7_experiments/experiments.tex
-Overfull \vbox (1.26006pt too high) has occurred while \output is active []
-
-
-[22
-
-
-
-
-]
 Chapter 5.
 \openout4 = `thesis.pyg'.
 
 
 (_minted-thesis/7DB09A3FEA322F9AD4818DC81129E2168FBDBCB5E0AFA139CAB6197421B8C3C
 1.pygtex)
-<figures/dataset_dict_features.png, id=139, 120.95187pt x 41.65562pt>
+<figures/dataset_dict_features.png, id=149, 120.95187pt x 41.65562pt>
 File: figures/dataset_dict_features.png Graphic file (type png)
 <use figures/dataset_dict_features.png>
 Package pdftex.def Info: figures/dataset_dict_features.png  used on input line 
@@ -1367,13 +1384,18 @@ Package pdftex.def Info: figures/dataset_dict_features.png  used on input line
 
 
 (_minted-thesis/78946C81F105C2416F522C9E5BF98FBE8FBDBCB5E0AFA139CAB6197421B8C3C
-1.pygtex) [23 <./figures/dataset_dict_features.png>]
+1.pygtex) [23
+
+
+
+
+ <./figures/dataset_dict_features.png>]
 \openout4 = `thesis.pyg'.
 
 
 (_minted-thesis/92017E6C80EBE147B08227522F9C770E8FBDBCB5E0AFA139CAB6197421B8C3C
 1.pygtex)
-<figures/tok_dataset.png, id=144, 307.1475pt x 61.73062pt>
+<figures/tok_dataset.png, id=154, 307.1475pt x 61.73062pt>
 File: figures/tok_dataset.png Graphic file (type png)
 <use figures/tok_dataset.png>
 Package pdftex.def Info: figures/tok_dataset.png  used on input line 52.
@@ -1431,55 +1453,63 @@ ine 149.
 
 (_minted-thesis/21D21C7948CC3EA9FAB427618DEB9CA58FBDBCB5E0AFA139CAB6197421B8C3C
 1.pygtex)
-<figures/loss_inf_small.png, id=156, 191.21437pt x 137.01187pt>
+Underfull \hbox (badness 10000) in paragraph at lines 199--200
+
+ []
+
+<figures/loss_inf_small.png, id=166, 191.21437pt x 137.01187pt>
 File: figures/loss_inf_small.png Graphic file (type png)
 <use figures/loss_inf_small.png>
-Package pdftex.def Info: figures/loss_inf_small.png  used on input line 203.
+Package pdftex.def Info: figures/loss_inf_small.png  used on input line 205.
 (pdftex.def)             Requested size: 273.00278pt x 195.64116pt.
-<figures/loss_inf_large.png, id=157, 196.735pt x 139.01938pt>
+
+Overfull \vbox (1.26006pt too high) has occurred while \output is active []
+
+
+[27]
+<figures/loss_inf_large.png, id=171, 196.735pt x 139.01938pt>
 File: figures/loss_inf_large.png Graphic file (type png)
 <use figures/loss_inf_large.png>
-Package pdftex.def Info: figures/loss_inf_large.png  used on input line 210.
+Package pdftex.def Info: figures/loss_inf_large.png  used on input line 214.
 (pdftex.def)             Requested size: 273.00278pt x 192.92665pt.
-
-Overfull \vbox (1.26006pt too high) has occurred while \output is active []
-
-
-[27 <./figures/loss_inf_small.png>]
-<figures/loss_inf_ext.png, id=163, 193.72375pt x 138.01563pt>
+<figures/loss_inf_ext.png, id=172, 193.72375pt x 138.01563pt>
 File: figures/loss_inf_ext.png Graphic file (type png)
 <use figures/loss_inf_ext.png>
-Package pdftex.def Info: figures/loss_inf_ext.png  used on input line 217.
+Package pdftex.def Info: figures/loss_inf_ext.png  used on input line 223.
 (pdftex.def)             Requested size: 273.00278pt x 194.50095pt.
-<figures/loss_infs2_s2.png, id=164, 195.22937pt x 138.01563pt>
-File: figures/loss_infs2_s2.png Graphic file (type png)
-<use figures/loss_infs2_s2.png>
-Package pdftex.def Info: figures/loss_infs2_s2.png  used on input line 224.
-(pdftex.def)             Requested size: 273.00278pt x 193.00572pt.
 
 Overfull \vbox (1.26006pt too high) has occurred while \output is active []
 
 
-[28 <./figures/loss_inf_large.png> <./figures/loss_inf_ext.png>]
-<figures/loss_infs2_large.png, id=170, 185.19188pt x 135.00438pt>
+[28 <./figures/loss_inf_small.png> <./figures/loss_inf_large.png>]
+<figures/loss_infs2_s2.png, id=178, 195.22937pt x 138.01563pt>
+File: figures/loss_infs2_s2.png Graphic file (type png)
+<use figures/loss_infs2_s2.png>
+Package pdftex.def Info: figures/loss_infs2_s2.png  used on input line 232.
+(pdftex.def)             Requested size: 273.00278pt x 193.00572pt.
+<figures/loss_infs2_large.png, id=179, 185.19188pt x 135.00438pt>
 File: figures/loss_infs2_large.png Graphic file (type png)
 <use figures/loss_infs2_large.png>
-Package pdftex.def Info: figures/loss_infs2_large.png  used on input line 232.
+Package pdftex.def Info: figures/loss_infs2_large.png  used on input line 242.
 (pdftex.def)             Requested size: 273.00278pt x 199.02052pt.
 
 Overfull \vbox (1.26006pt too high) has occurred while \output is active []
 
 
-[29 <./figures/loss_infs2_s2.png> <./figures/loss_infs2_large.png>]
+[29 <./figures/loss_inf_ext.png> <./figures/loss_infs2_s2.png>]
 \openout4 = `thesis.pyg'.
 
 
 (_minted-thesis/884AFE2314DA757F9AF47F8A0F03DFEB8FBDBCB5E0AFA139CAB6197421B8C3C
-1.pygtex)
+1.pygtex
+Overfull \vbox (1.26006pt too high) has occurred while \output is active []
+
+
+[30 <./figures/loss_infs2_large.png>])
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...4.17.0/src/transformers/trainer.py##
                                                   L2006
-l.269 ...4.17.0/src/transformers/trainer.py#L2006}
+l.279 ...4.17.0/src/transformers/trainer.py#L2006}
                                                   
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -1487,7 +1517,7 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 
-Overfull \hbox (30.02315pt too wide) in paragraph at lines 269--270
+Overfull \hbox (30.02315pt too wide) in paragraph at lines 279--280
 []\T1/lmr/m/n/10.95 quelle: https://github.com/huggingface/transformers/blob/v4
 .17.0/src/transformers/trainer.pyL2006[] 
  []
@@ -1497,52 +1527,51 @@ Overfull \hbox (30.02315pt too wide) in paragraph at lines 269--270
 
 (_minted-thesis/C6DE0AA92FBD7B4A377D997EFF7BF4058FBDBCB5E0AFA139CAB6197421B8C3C
 1.pygtex)
+<figures/tok_dataset_wordids.png, id=189, 376.90813pt x 61.22874pt>
+File: figures/tok_dataset_wordids.png Graphic file (type png)
+<use figures/tok_dataset_wordids.png>
+Package pdftex.def Info: figures/tok_dataset_wordids.png  used on input line 30
+9.
+(pdftex.def)             Requested size: 455.0pt x 73.91414pt.
+
 Overfull \vbox (1.26006pt too high) has occurred while \output is active []
 
 
-[30]
-<figures/tok_dataset_wordids.png, id=179, 376.90813pt x 61.22874pt>
-File: figures/tok_dataset_wordids.png Graphic file (type png)
-<use figures/tok_dataset_wordids.png>
-Package pdftex.def Info: figures/tok_dataset_wordids.png  used on input line 29
-9.
-(pdftex.def)             Requested size: 273.00278pt x 44.34904pt.
+[31]
 \openout4 = `thesis.pyg'.
 
 
 (_minted-thesis/7E6BD924E479C69DBAFE058FE3A25A608FBDBCB5E0AFA139CAB6197421B8C3C
-1.pygtex
+1.pygtex)
+<figures/wwm_example.png, id=193, 792.0792pt x 159.4758pt>
+File: figures/wwm_example.png Graphic file (type png)
+<use figures/wwm_example.png>
+Package pdftex.def Info: figures/wwm_example.png  used on input line 355.
+(pdftex.def)             Requested size: 455.0pt x 91.61026pt.
+
 Overfull \vbox (1.26006pt too high) has occurred while \output is active []
 
 
-[31 <./figures/tok_dataset_wordids.png>])
-<figures/wwm_example.png, id=184, 792.0792pt x 159.4758pt>
-File: figures/wwm_example.png Graphic file (type png)
-<use figures/wwm_example.png>
-Package pdftex.def Info: figures/wwm_example.png  used on input line 345.
-(pdftex.def)             Requested size: 455.0pt x 91.61026pt.
+[32 <./figures/tok_dataset_wordids.png>]
 \openout4 = `thesis.pyg'.
 
 
 (_minted-thesis/38A8D5727389789A58DF91176F32A8908FBDBCB5E0AFA139CAB6197421B8C3C
 1.pygtex)
-<figures/loss_wwm.png, id=185, 214.30063pt x 157.08687pt>
+<figures/loss_wwm.png, id=198, 214.30063pt x 157.08687pt>
 File: figures/loss_wwm.png Graphic file (type png)
 <use figures/loss_wwm.png>
-Package pdftex.def Info: figures/loss_wwm.png  used on input line 368.
+Package pdftex.def Info: figures/loss_wwm.png  used on input line 378.
 (pdftex.def)             Requested size: 273.00278pt x 200.13327pt.
 )
 Overfull \vbox (1.26006pt too high) has occurred while \output is active []
 
 
-[32 <./figures/wwm_example.png>]
-Overfull \vbox (1.26006pt too high) has occurred while \output is active []
-
-
-[33 <./figures/loss_wwm.png>]
+[33 <./figures/wwm_example.png> <./figures/loss_wwm.png>]
 \openout2 = `5_resultsevaluation/results.aux'.
 
- (5_resultsevaluation/results.tex
+
+(5_resultsevaluation/results.tex
 Overfull \vbox (1.26006pt too high) has occurred while \output is active []
 
 
@@ -1597,13 +1626,13 @@ runsystem(del thesis.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 23149 strings out of 478582
- 481450 string characters out of 2841040
+ 23191 strings out of 478582
+ 482566 string characters out of 2841040
  971629 words of memory out of 3000000
- 40713 multiletter control sequences out of 15000+600000
+ 40750 multiletter control sequences out of 15000+600000
  554642 words of font info for 90 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 115i,11n,117p,1608b,667s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 115i,11n,117p,1608b,669s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/GrabnerCorin/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts
 1.enc}{C:/Users/GrabnerCorin/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/l
 m-mathit.enc}{C:/Users/GrabnerCorin/AppData/Local/Programs/MiKTeX/fonts/enc/dvi
@@ -1627,9 +1656,9 @@ X/fonts/type1/public/lm/lmsy10.pfb><C:/Users/GrabnerCorin/AppData/Local/Program
 s/MiKTeX/fonts/type1/public/lm/lmtk10.pfb><C:/Users/GrabnerCorin/AppData/Local/
 Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/GrabnerCorin/AppData
 /Local/Programs/MiKTeX/fonts/type1/public/lm/lmtti10.pfb>
-Output written on thesis.pdf (49 pages, 1134227 bytes).
+Output written on thesis.pdf (49 pages, 1625574 bytes).
 PDF statistics:
- 293 PDF objects out of 1000 (max. 8388607)
+ 303 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 103 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 128 words of extra memory for PDF output out of 10000 (max. 10000000)
 

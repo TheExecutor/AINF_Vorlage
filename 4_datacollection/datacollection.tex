@@ -13,8 +13,7 @@ The remaining dataset was created out of different data sources which got catego
 Consider three samples taken from fault analysis reports of an FA  Laboratory  presented  in Error!  Reference  source  not found..  The  examples  show  selected  sentences  describing  the findings  of  an  engineer  and  the  labels  indicating  the  physical faults  and  their  electrical  signatures.  Both  types  of  labels  are organized in an ontology, which is a hierarchical structure rep-resenting a taxonomy of faults. This ontology allows for the de-velopment of software tools helping to label reports manually and working with the classification results. Along  with  the  job  summary,  the  reports  contain  a  series  of fields including, an identification number of the device, lists of tasks performed on the device, the images obtained by certain tools such as X-Ray,the  description of such images attached, etc. A subset of the reports also includesfault labels, both of the electrical signature of the faulty device and of the final physical failure.For the classification phase, these two faults are considered the target  output  while  the  job  summary  and  image  descriptions will constitute the input.}
 
 \subsection{S2ORC Dataset}
-The S2ORC Dataset was collected by the Allen Institute of Ar-tificial  Intelligence  and  it  has  a  corpus  of 81.1M  English-language academic papers from different domains. Around 40\% of the papers belong to the  biomedical field, as in Figure \ref{fig:domains}. The texts  got  extracted  from  PDFs  including  abstracts  and  inline mentions of citations.
-The S2ORC-SciBERT is a SciBERT model which was further trained on the S2ORC dataset presented above. It got published simultaneously with the dataset itself from the same developers. Compared to SciBERT it has a wider corpus including 20 different  domains like  Computer  Science,  Mathematical  Science and Engineering which could be beneficial for the FA domain. However, it was also trained in Medical and Biology data which again could be a drawback for the model as with SciBERT.
+The S2ORC Dataset was collected by the Allen Institute of Artificial  Intelligence  and  it  has  a  corpus  of 81.1M  English-language academic papers from different domains. The texts  got  extracted  from  PDFs  including  abstracts  and  inline mentions of citations. The selection of subject areas is extensive and ranges from medicine and biology to geography as depicted in Figure \ref{fig:domains}.
 
 \begin{figure}[H]
 	\centering
@@ -23,11 +22,41 @@ The S2ORC-SciBERT is a SciBERT model which was further trained on the S2ORC data
 	\label{fig:domains}
 \end{figure}
 
+Around 40\% of the papers belong to the  biomedical field, which is counterproductive for training a model in semiconductor domain. The vocabulary in the medical field partly overlaps with that in electronics, but has different meanings. A good example of this are the words neuron and electron, which are used in medicine in the field of neurology and whose semantics are related to the human brain. In electronics, this means negatively or neutrally charged particles and is related to current and voltage. For this reason, we decided to shrink the S2ORC data set and filter out only those papers that fit together in the subject area with electronics and semiconductor.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\textwidth]{figures/s2orc_filtered.PNG}
+	\caption{Filtering of Domains in the S2ORC Dataset.}
+	\label{fig:filtered_domains}
+\end{figure}
+
+We decided to use the following domains:
+\begin{itemize}
+	\item Physics
+	\item Computer Science
+	\item Chemistry
+	\item Mathematical Science
+	\item Engineering
+\end{itemize}
+
+As the selected domains form the minority of the s2orc datset, it shrank together from 81.1 Million papers to a size of about 21.000 papers as visible in Figure \ref{fig:filtered_domains}.
+
 \subsection{Infineon Dataset}
 In addition, we created an Infineon Dataset comprising rele-vant textual data available on the company’s intranet. This dataset comprises 1.687 papers covering research topics and best-practices methods in the semiconductor domain. It was collected by employees and engineers of Infineon . Be-cause these papers got collected from engineers in different countries, we had to filter out non-English language papers. After filtering and extracting the raw text, we used approxi-mately 31.5MB of text data to create a dataset.
 
 \subsection{Additional Data}
 To increase the specificity of the training data for the FA domain, we also searched the Web for FA and electrical en-gineering papers. In this work we were using open search engines, like FreeFullPDF  and GoogleScholar , as well as specific sources, like IEEE, to collect the data. The text was extracted from the papers and converted into a text represen-tation. The resulting dataset comprises 12.31MB of raw text, where 2.33MB got collected from FreeFullPDF and Google-Scholar and the other 9.98MB from IEEE.
+
+
+
+After finishing collecting papers we ended with four independent in domain datasets collected from four different sources. We decided to unite the two smallest datasets when using it for training, what will be covered in the following chapters.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{figures/datasets.PNG}
+	\caption{Overview of all collected datasets.}
+	\label{fig:datasets}
+\end{figure}
 
 \section{Data Preprocessing}
 For later usage during training, we combined the Infineon and the Additional Datasets in one. Moreover, since the biggest part of the S2ORC Dataset was medical and biomedical data, we filtered this dataset by using the FA ontology keywords, retaining only documents that comprise at least one keyword. The resulting filtered dataset contains approximately 542MB of raw text. For later discussions, we introduce the following abbreviations for the datasets:

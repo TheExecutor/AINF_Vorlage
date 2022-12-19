@@ -1,12 +1,12 @@
 \chapter{Literature Review} \label{chapter:literaturereview}
+In this section we describe some techniques used in NLP, trying to give an overview of the current state of art and what is necessary to train a language model.
 
 \section{Natural Language Processing}
 \alert{Communication and the sharing of knowledge is an essential part of human society. History has shown that the best way to transmit knowledge is in writing. It is not difficult for a person to learn to read and to understand the context in texts. For computers, this task is much more difficult. Natural Language Processing (NLP) is a subfield pf Artificial Intelligence (AI) which deals with teaching computers to understand and interpret human language and has emerged in 1940. The initial need of NLP was the translation from one language into another which was used during the second world war. Nowadays it is widely used in health care, spam detection, sentiment and cognitive analysis. NLP also provides computers with the ability to read text, hear speech, and communicate with humans. Every person had contact with a NLP device at least once in their life. The best example everyone might know are personal assistants like Siri or Alexa. These are applications which work with NLP and have learned to communicate with humans and nearly seem humanely.\newline
 Generally speaking, NLP breaks down language into shorter, more basic pieces, called tokens (words, periods, etc.) which get saved as vectorial representations. The technique of mapping words to real vectors is called word embedding. To understand the relationships of the tokens, the model gets trained by predicting some hidden part of the text using some other part of their surrounding text. One way to calculate the representations of the vectors is the method \textit{Word2Vec}. Until BERT has emerged, Word2Vec was the most common technique to create word embeddings. It is a two-layer neural network which processes text and turns it into a numerical form that can be understand by deep neural networks. Given enough data, Word2vec can make highly accurate guesses about a word’s meaning based on past appearances. Those guesses can be used to establish a word’s association with other words. The diference between Word2Vec and BERT will be covered in Section \ref{bert}}.
 
 \section{Text Representation}
-
-\subsection{Tokenization}
+Text representation is a fundamental problem of NLP and necessary for preparing raw text as input for a language model. It aims to create a numerical representation of the unstructured text and make them mathematically computable. It is also called text vectorization or feature extraction.\newline
 Texts cannot be processed by ML models directly. Tokenization is a method that transforms sequences of characters into a sequence of integers. As an example we can take the sentence: \newline
 
 \centerline{"This is a cat."} 
@@ -18,6 +18,40 @@ A tokenization transforms this sentence into [‘This’, ‘is’, ‘a’, cat
 \end{itemize} 
 
 In modern LMs, tokenizers are trained together with the model to identify the best possible transformations, which can happen on both word and sub-word levels. The set of obtained tokens determines the vocabulary of an LM. If a word appears in the vocabulary of LM, it can be represented as a vector in the target space. Otherwise, a word is split into parts until each of them can be mapped to a set of tokens from the vocabulary. In the worst case, a word is split into individual letters. Such splitting may significantly reduce the quality of word embeddings in the vector space, thus reducing the quality of features extracted for the classification layers of a network. Therefore, it is essential either to select an LM whose vocabulary provides good coverage of the main terms used in an application domain or to extend the vocabulary of an LM with these terms and fine-tune it on domain-specific texts. 
+
+The next chapters cover the most common techniques of text representation.
+
+\subsection{One-Hot Encoding}
+One-hot encoding is a type of representation which sentences in a document into the shape of a 2-D array as shown in the example below for the sentence \textbf{This is a cat.}:
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{ll}
+		\hline
+		\textbf{Word} & \textbf{Vector Representation} \\ \hline
+		This & [1, 0, 0, 0]\\ 
+		is    & [0, 1, 0, 0]\\ 
+		a & [0, 0, 1, 0]\\ 
+		cat  & [0, 0, 0, 1]\\ \hline
+	\end{tabular}
+	\caption{One Hot Encoding Example}
+	\label{tab:onehot}
+\end{table}
+
+\subsection{Term Frequency - Inverse Document Frequency}
+Term Frequency - Inverse Document Frequency (TF-IDF) is a statistical measure to determine how important a word is within a document. It determines not only how often a word appears in a single document, but also how often it appears in the entire document corpus. Very common words like "this" or "and" get a lower score, even though they occur often, because they are not important for the context of a document. This will be determined by comparing the occurrence of these words among the documents. This strategy is often used in NLP for text analysis. For example, in a failure analysis report, a word like failure would get a high score. By using other important words, the report could be automatically assigned to a certain failure type and thus classified. \\
+TF-IDF for a word in a document is calculated by multiplying the term frequency and the inverse document frequency.
+
+\begin{align}
+	tf idf (t, d, D) &= tf(t, d) * idf(t, D)
+\end{align}
+Where
+\begin{align}
+	tf (t, D) &= log(1 + freq(t, d)) \\
+	idf(t, D) = log(N/count(d E D, t E d))
+\end{align}
+
+The term frequency \textit{tf} is either a simple count of instances a word appears in a document or it can be adjusted by taking the length of the document to account. The calculation can be seen in (2.3) where \textit{t} is the term and \textit{D} the document to analyse. The inverse document frequency \textit{idf} is determined accross the document corpus. The closer this metric is to zero, the more common a word is. The calculations can be seen in (2.4) where \textit{N} is the number of documents.
 
 \subsection{Bag of Words}
 Bag of Words is a method for simplifying the representation of documents and the importance of the words they contain which is used in NLP and Information Retreivel (IR). Here the sentences in the documents are divided into their individual words and counted. The resulting object contains a list of the contained words and the number of their occurrences. It is called a “bag” of words, because any information about the order or structure of words in the document is discarded. The model is only concerned with whether known words occur in the document, not where in the document. We will describe the concept of bag-of-words with the following example: The below snippet contains the first few lines of \alert{the book "A Tale of Two Cities" by Charles Dickens. Different example?}
@@ -59,20 +93,7 @@ Using this vocabulary, vector representations can be created for any document. F
 	\label{tab:scoring}
 \end{table}
 
-\subsection{Term Frequency - Inverse Document Frequency}
-Term Frequency - Inverse Document Frequency (TF-IDF) is a statistical measure to determine how important a word is within a document. It determines not only how often a word appears in a single document, but also how often it appears in the entire document corpus. Very common words like "this" or "and" get a lower score, even though they occur often, because they are not important for the context of a document. This will be determined by comparing the occurrence of these words among the documents. This strategy is often used in NLP for text analysis. For example, in a failure analysis report, a word like failure would get a high score. By using other important words, the report could be automatically assigned to a certain failure type and thus classified. \\
-TF-IDF for a word in a document is calculated by multiplying the term frequency and the inverse document frequency.
 
-\begin{align}
-	tf idf (t, d, D) &= tf(t, d) * idf(t, D)
-\end{align}
-Where
-\begin{align}
-	tf (t, D) &= log(1 + freq(t, d)) \\
-	idf(t, D) = log(N/count(d E D, t E d))
-\end{align}
-
-The term frequency \textit{tf} is either a simple count of instances a word appears in a document or it can be adjusted by taking the length of the document to account. The calculation can be seen in (2.3) where \textit{t} is the term and \textit{D} the document to analyse. The inverse document frequency \textit{idf} is determined accross the document corpus. The closer this metric is to zero, the more common a word is. The calculations can be seen in (2.4) where \textit{N} is the number of documents.
 
 \subsection{Word Embeddings}
 A machine is not able to process text in its raw form. Word embedding is a technique were words are transformed into a numerical representation, a vector. This embedding is then fed into machine learning models. The simplest embedding technique is one hot encoding which would look as in Table \ref{tab:onehot}.
