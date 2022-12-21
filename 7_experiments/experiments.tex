@@ -192,8 +192,8 @@ In the first training experiments it was our goal to move the bias of the pretra
 
 For later discussions and easier use we introduce the following abbreviations:
 \begin{itemize}
-	\item inf: Infineon Dataset (FA-reports, FA-papers, IEEE papers, FreeFullPDF papers)
-	\item s2: S2ORC dataset filtered on keywords
+	\item \textbf{inf}: Infineon Dataset (FA-reports, FA-papers, IEEE papers, FreeFullPDF papers)
+	\item \textbf{s2}: S2ORC dataset filtered on keywords
 \end{itemize}
 
 For the first few experiments we used the inf dataset together with the different trained and extended tokenizers explained in section \ref{sec:tokenizer}. The inf dataset should be a good complement to the BERT based model which has already been pre-trained with the S2ORC dataset. With the help of the trained tokenizers, this training material should prepare for the classification of FA reports. We trained the models for 10 epochs and a learning rate of 2e-5 as described in Listing \ref{code:trainer}. In the descriptions of the following experiments we refer to the abbreviations described in section \ref{chapter:training-tokenizer} and section \ref{chapter:training-experiments}. \newline
@@ -375,7 +375,7 @@ We trained the model with the new masking method again for 20 epochs and the sam
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.6\textwidth]{figures/loss_wwm.png}
+	\includegraphics[width=0.6\textwidth]{figures/loss_wwm_20.png}
 	\caption{Loss Function during Training with Whole Word Masking.}
 	\label{fig:loss_wwm}
 \end{figure}
