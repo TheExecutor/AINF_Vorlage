@@ -2,21 +2,56 @@
 This chapter will cover the first two research questions about existing BERT models and how well they fit to the semiconductor domain. In this way we were able to find a suitable entrypoint for training our FA-BERT model.
 
 \section{Overview of BERT based Models}
+Since the development of BERT in 2018, many models that are based on BERT but fine-tuned for a specific task appeared. The following sections cover the most common known BERT models.
 
 \subsection{RoBERTa}
+RoBERTa is the name of an optimized BERT pretraining approach developed by Facebook and Washington University. It is entirely based on BERT and modifies some training methods and parameters. The name stands for Robustly Optimized BERT Pre-training Approach. For the pretraining, some methods and parameters of BERT were changed and adjusted. These changes and adjustments are essentially the following:
 
+\begin{itemize}
+	\item Remove Next Sentence Prediction (NSP) from pretraining
+	\item Replacement of static masking with dynamic masking
+	\item Increasing the batch size of the sequences
+	\item Increase in training iterations
+	\item Use of significantly more training data
+\end{itemize}
+
+To increase the training data the developers used further text data with a total size of 160 gigabytes are used. This data includes the Common Crawl News dataset, which has 63 million articles and is 76 GB in size, the Open Web Text corpus, which is 38 GB in size, and stories from Common Crawl, which are 31 GB in size. \newline
+The optimization of the BERT pretraining with RoBERTa shows significant improvements compared to the original BERT training in various NLP benchmarks. In NLP benchmarks such as GLUE (General Language Understanding Evaluation), SQuAD (Stanford Question Answering Dataset) or RACE (ReAding Comprehension from Examinations), RoBERTa achieved top scores that had not been achieved before. For example, RoBERTa achieved a top position with an accuracy of 88.5 in the GLUE benchmark.
+
+\alert{https://www.bigdata-insider.de/was-ist-roberta-a-1116137/}
 \subsection{Med-BERT}
+\alert{https://arxiv.org/abs/2005.12833}
+Med-BERT is a BERT based model which got trained on the EHR (electronical health records) dataset. The EHR is containing data from 28.490.650 patients. Similarly to RoBERTa they also exlcuded Next Sentence Prediction from the training task ans used MLM only. As already described in Section \ref{bert}, BERT based models usually have the additional tokens SEP and CLS in their input layer. The CLS token summarizes the information of the input int two sentences, but as the EH records are usually much longer than two sentences, the CLS token was not helpful. Consequently, the developers removed the CLS and SEP tokens from the input layer. \newline
+Figure \ref{fig:medbert} depicts the Med-BERT structure. As an input the model gets three types of embeddings, code, serialization and visit embeddigs. Code embeddings are representing the diagnosis code were serialization embeddings denote the relative order of each code for each visit. Visit embeddings are neccessary to distinguish between different visits.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{figures/medbert.PNG}
+	\caption{Med-BERT structure}
+	\label{fig:medbert}
+\end{figure}
+
 
 \subsection{SciBERT}
-The development of BERT was a milestone in Natural language processing. Since the vocabulary of BERT is restricted, the application of the model in some domains does not lead to a satisfactory performance. To achieve this goal in different scientific fields, the model of BERT got adapted to SciBERT. The SciBERT model follows the same architecture as BERT but is instead pre-trained on scientific text. The corpus consists of 1,14M papers derived from \textit{Google Scholar}, 18\% papers from the computer science domain and 82\% from the broad biomedical domain. The authors used the full text of the papers instead of only the abstracts. The average paper length is 154 sentences which results in 2.769 tokens. The final corpus size has 3.17B tokens, similar to the 3.3B tokens on which BERT was trained \cite{Beltagy}. \newline
+The development of BERT was a milestone in Natural language processing. Since the vocabulary of BERT is restricted, the application of the model in some domains does not lead to a satisfactory performance. To achieve this goal in different scientific fields, the model of BERT got adapted to SciBERT. The SciBERT model follows the same architecture as BERT but is instead pre-trained on scientific text. The corpus consists of 1,14M papers derived from \textit{Google Scholar}, 18\% papers from the computer science domain and 82\% from the broad biomedical domain. With that the developers want to investigate the performance on downstream tasks when having and in-domain vocabulary. The authors used the full text of the papers instead of only the abstracts. The average paper length is 154 sentences which results in 2.769 tokens. The final corpus size has 3.17B tokens, similar to the 3.3B tokens on which BERT was trained \cite{Beltagy}. \newline
+As pretraining BERT for long sentences can be slow, the developers set a maximum sentence length of 128 tokens, and train the model until the training loss stops decreasing. After that, they continue training the model allowing sentence lengths up to 512 tokens. To obtain the best possible performing model, they tried to train different versions of SciBERT:
 
-The S2ORC-SciBERT is a SciBERT model which was further trained on the S2ORC dataset presented above. It got published simultaneously with the dataset itself from the same developers. Compared to SciBERT it has a wider corpus including 20 different domains like Computer Science, Mathematical Science and Engineering which could be beneficial for the FA domain. However it was also trained on Medical and Biology data which again could be a drawback for the model as with SciBERT.
+\begin{itemize}
+	\item Training the models cased and uncased
+	\item Fine-tune the BERT- base model with original BaseVocab
+	\item Training a BERT model from scratch with the constructed SciVocab.
+\end{itemize}
+
+The SciVocab was previously created out of the collected data corpus using the \textit{SentencePiece} library. Similary to the BERT baseVocab, it is a \textit{WordPiece} vocab. \alert{https://arxiv.org/abs/1903.10676} \newline
+Although the training of the model with scientific texts sounds promising, the amount of 82\% biomedical domain could be a drawback for our task.
 
 \subsection{S2ORC-SciBERT}
+The S2ORC-SciBERT is a SciBERT model which was further trained on the S2ORC dataset which will be presented in Section \ref{s2orc_dataset}. It got published simultaneously with the dataset itself from the same developers. Compared to SciBERT it has a wider corpus including 20 different domains like Computer Science, Mathematical Science and Engineering which could be beneficial for the FA domain. However it was also trained on Medical and Biology data which again could be a drawback for the model as with SciBERT and Med-BERT.
+\alert{https://paperswithcode.com/paper/gorc-a-large-contextual-citation-graph-of}
 
 \section{Choosing the Model Entrypoint}
 Since BERT models studied in this paper were trained on different text corpora, their tokenizers might provide different coverage of important terms used in the FA domain, such as the ones stored in FA ontology. To determine the coverage, we first analyze the tokenization of the ontology keywords with the three language models: traditional BERT, SciBERT and S2ORC-SciBERT. With this analysis it was possible to gain a first impression about the vocabulary of the models and how well they fit to the electrical domain. \newline
-The models got downloaded from the website \alert{Huggingface} and can be load into the notebook as follows:
+The models got downloaded from the website \alert{Huggingface} and can be load into the code as follows:
 \begin{minted}{python}
 	model = BertModel.from_pretrained("/path/to/model/")
 	tokenizer = BertTokenizer(vocab_file = '../path/to/tokeizer/vocab.txt')
@@ -82,15 +117,21 @@ For the tokenization of the FA reports and their word stems we assumed to see at
 	\label{fig:stemming_performance}
 \end{figure}
 
-\alert{In order to finally decide between SciBERT and S2ORC-SciBERT, a further analysis was performed in which the keywords were assigned a weighting based on their occurrence frequency. This makes it possible to assign an importance to the keywords. The more often they appear in the reports, the more important it is that the model tokenizes the keywords well. Therefore, using the frequency and the number of subtokens, a weight is calculated as follows:}
+In order to finally decide between SciBERT and S2ORC-SciBERT, a further analysis was performed in which the keywords were assigned a weighting based on their occurrence frequency. In that way the keywords get weighted according to their importance. Words that appear very often in the reports must be well recognized and tokenized by the model. Therefore, using the frequency and the number of subtokens, a weight is calculated as follows:
+
 \begin{align}
 	n &= |t_1, t_2, ... t_n| \\
 	\to w &= n \cdot sx_m
 \end{align}
+were \textit{n} is the number of tokens a keywords got split into and \text{w} is the calculated wheight a keywords gets assigned. \newline
+The resulting weights got stored as tuples containing the keyword and its assigned wheight:
 
-The resulting weights looked like the following:
+\begin{code}
+	\label{code:wheights}
+	\centering
 \begin{minted}{python}
-	[('thin', 0.002654), ('backside', 0.062375), ('metallization', 0.12209),...]
+	[('kw1', 0.002654), ('kw2', 0.062375), ('kw3', 0.12209),...]
 \end{minted}
+\end{code}
 
 After this weighting we again performed a tokenization and examined the good and badly tokenized keywords, but both models performed again very similar. SciBERT tokenized 129 keywords good, S2ORC-SciBERT 120. Because the FA reports contain out of more than only keywords, we decided to choose the S2ORC-SciBERT as an entrypoint for our further experiments. It has more electrical and physical papers in its training corpus than the original SciBERT and therefore might work better for us.

@@ -12,7 +12,7 @@ The remaining dataset was created out of different data sources which got catego
 \alert{For training the classification models, we have considered the historical  data  of  the FA  laboratory.  These  reports  contain  a series  of  fields,  including  the  job  identification  number,  cus-tomer comment regarding the issues found in devices, an anal-ysis report describing applied methods, found physical defects, their  locations,  electrical  characterization,  and  other  details. Some of this data is structured and can be retrieved from corre-sponding databases. However, the essential parts relevant to the fault  identification  process  are  described  only  in  textual  form and, therefore, cannot be processed automatically.
 Consider three samples taken from fault analysis reports of an FA  Laboratory  presented  in Error!  Reference  source  not found..  The  examples  show  selected  sentences  describing  the findings  of  an  engineer  and  the  labels  indicating  the  physical faults  and  their  electrical  signatures.  Both  types  of  labels  are organized in an ontology, which is a hierarchical structure rep-resenting a taxonomy of faults. This ontology allows for the de-velopment of software tools helping to label reports manually and working with the classification results. Along  with  the  job  summary,  the  reports  contain  a  series  of fields including, an identification number of the device, lists of tasks performed on the device, the images obtained by certain tools such as X-Ray,the  description of such images attached, etc. A subset of the reports also includesfault labels, both of the electrical signature of the faulty device and of the final physical failure.For the classification phase, these two faults are considered the target  output  while  the  job  summary  and  image  descriptions will constitute the input.}
 
-\subsection{S2ORC Dataset}
+\subsection{S2ORC Dataset} \label{s2orc_dataset}
 The S2ORC Dataset was collected by the Allen Institute of Artificial  Intelligence  and  it  has  a  corpus  of 81.1M  English-language academic papers from different domains. The texts  got  extracted  from  PDFs  including  abstracts  and  inline mentions of citations. The selection of subject areas is extensive and ranges from medicine and biology to geography as depicted in Figure \ref{fig:domains}.
 
 \begin{figure}[H]
@@ -23,6 +23,7 @@ The S2ORC Dataset was collected by the Allen Institute of Artificial  Intelligen
 \end{figure}
 
 Around 40\% of the papers belong to the  biomedical field, which is counterproductive for training a model in semiconductor domain. The vocabulary in the medical field partly overlaps with that in electronics, but has different meanings. A good example of this are the words neuron and electron, which are used in medicine in the field of neurology and whose semantics are related to the human brain. In electronics, this means negatively or neutrally charged particles and is related to current and voltage. For this reason, we decided to shrink the S2ORC data set and filter out only those papers that fit together in the subject area with electronics and semiconductor.
+\alert{https://paperswithcode.com/paper/gorc-a-large-contextual-citation-graph-of}
 
 \begin{figure}[H]
 	\centering
