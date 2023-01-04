@@ -1,49 +1,50 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}{}%
 \contentsline {section}{\numberline {1.1}Motivation}{1}{}%
 \contentsline {section}{\numberline {1.2}Problem Description}{3}{}%
-\contentsline {section}{\numberline {1.3}Research Questions}{3}{}%
+\contentsline {section}{\numberline {1.3}Research Questions}{4}{}%
 \contentsline {section}{\numberline {1.4}Contributions}{4}{}%
 \contentsline {chapter}{\numberline {2}Literature Review}{7}{}%
 \contentsline {section}{\numberline {2.1}Natural Language Processing}{7}{}%
 \contentsline {section}{\numberline {2.2}Text Representation}{7}{}%
 \contentsline {subsection}{\numberline {2.2.1}One-Hot Encoding}{8}{}%
-\contentsline {subsection}{\numberline {2.2.2}Term Frequency - Inverse Document Frequency}{8}{}%
+\contentsline {subsection}{\numberline {2.2.2}Term Frequency - Inverse Document Frequency}{9}{}%
 \contentsline {subsection}{\numberline {2.2.3}Bag of Words}{9}{}%
-\contentsline {subsection}{\numberline {2.2.4}Word Embeddings}{10}{}%
-\contentsline {subsubsection}{Word2Vec Architecture}{10}{}%
-\contentsline {section}{\numberline {2.3}Masked Language Modelling}{10}{}%
-\contentsline {subsection}{\numberline {2.3.1}Transformer}{10}{}%
-\contentsline {subsection}{\numberline {2.3.2}Evolution of Language Models}{11}{}%
-\contentsline {subsection}{\numberline {2.3.3}BERT}{12}{}%
-\contentsline {subsubsection}{Difference from BERT and word2Vec}{13}{}%
-\contentsline {chapter}{\numberline {3}Selection of Language Model}{15}{}%
-\contentsline {section}{\numberline {3.1}Overview of BERT based Models}{15}{}%
-\contentsline {subsection}{\numberline {3.1.1}RoBERTa}{15}{}%
-\contentsline {subsection}{\numberline {3.1.2}Med-BERT}{16}{}%
-\contentsline {subsection}{\numberline {3.1.3}SciBERT}{16}{}%
-\contentsline {subsection}{\numberline {3.1.4}S2ORC-SciBERT}{17}{}%
-\contentsline {section}{\numberline {3.2}Choosing the Model Entrypoint}{17}{}%
-\contentsline {chapter}{\numberline {4}Data Collection}{21}{}%
-\contentsline {section}{\numberline {4.1}Data Sources}{21}{}%
-\contentsline {subsection}{\numberline {4.1.1}Failure Analysis Ontology and Reports}{21}{}%
-\contentsline {subsection}{\numberline {4.1.2}S2ORC Dataset}{22}{}%
-\contentsline {subsection}{\numberline {4.1.3}Infineon Dataset}{23}{}%
-\contentsline {subsection}{\numberline {4.1.4}Additional Data}{24}{}%
-\contentsline {section}{\numberline {4.2}Data Preprocessing}{24}{}%
-\contentsline {subsection}{\numberline {4.2.1}Data Cleaning}{25}{}%
-\contentsline {subsection}{\numberline {4.2.2}Dataset Formatting}{25}{}%
-\contentsline {chapter}{\numberline {5}Experiments}{27}{}%
-\contentsline {section}{\numberline {5.1}Tokenization of the dataset}{27}{}%
-\contentsline {section}{\numberline {5.2}Training of the Tokenizer}{29}{}%
-\contentsline {subsection}{\numberline {5.2.1}Extending the tokenizers vocabulary}{29}{}%
-\contentsline {subsection}{\numberline {5.2.2}Pre-Training the tokenizer}{29}{}%
-\contentsline {section}{\numberline {5.3}Training Process}{30}{}%
-\contentsline {subsection}{\numberline {5.3.1}Moving the bias towards FA domain}{31}{}%
-\contentsline {subsection}{\numberline {5.3.2}Trying different types of losses}{34}{}%
-\contentsline {subsection}{\numberline {5.3.3}Changing the Masking Method}{35}{}%
-\contentsline {chapter}{\numberline {6}Results}{39}{}%
-\contentsline {section}{\numberline {6.1}Performance Measures}{39}{}%
-\contentsline {section}{\numberline {6.2}Discussion of Results}{39}{}%
-\contentsline {chapter}{\numberline {7}Conclusion}{41}{}%
-\contentsline {section}{\numberline {7.1}Future Work}{41}{}%
-\contentsline {chapter}{Bibliography}{43}{}%
+\contentsline {subsection}{\numberline {2.2.4}Word2Vec Architecture}{10}{}%
+\contentsline {subsubsection}{Common Bag of Words}{11}{}%
+\contentsline {subsubsection}{Skip Gram}{11}{}%
+\contentsline {section}{\numberline {2.3}Masked Language Modelling}{12}{}%
+\contentsline {subsection}{\numberline {2.3.1}Transformer}{12}{}%
+\contentsline {subsection}{\numberline {2.3.2}Evolution of Language Models}{13}{}%
+\contentsline {subsection}{\numberline {2.3.3}BERT}{14}{}%
+\contentsline {subsubsection}{Difference between BERT and Word2Vec}{16}{}%
+\contentsline {chapter}{\numberline {3}Selection of Language Model}{17}{}%
+\contentsline {section}{\numberline {3.1}Overview of BERT based Models}{17}{}%
+\contentsline {subsection}{\numberline {3.1.1}RoBERTa}{17}{}%
+\contentsline {subsection}{\numberline {3.1.2}Med-BERT}{18}{}%
+\contentsline {subsection}{\numberline {3.1.3}SciBERT}{18}{}%
+\contentsline {subsection}{\numberline {3.1.4}S2ORC-SciBERT}{19}{}%
+\contentsline {section}{\numberline {3.2}Choosing the Model Entrypoint}{19}{}%
+\contentsline {chapter}{\numberline {4}Data Collection}{23}{}%
+\contentsline {section}{\numberline {4.1}Data Sources}{23}{}%
+\contentsline {subsection}{\numberline {4.1.1}Failure Analysis Ontology and Reports}{23}{}%
+\contentsline {subsection}{\numberline {4.1.2}S2ORC Dataset}{24}{}%
+\contentsline {subsection}{\numberline {4.1.3}Infineon Dataset}{25}{}%
+\contentsline {subsection}{\numberline {4.1.4}Additional Data}{26}{}%
+\contentsline {section}{\numberline {4.2}Data Preprocessing}{26}{}%
+\contentsline {subsection}{\numberline {4.2.1}Data Cleaning}{27}{}%
+\contentsline {subsection}{\numberline {4.2.2}Dataset Formatting}{27}{}%
+\contentsline {chapter}{\numberline {5}Experiments}{29}{}%
+\contentsline {section}{\numberline {5.1}Tokenization of the dataset}{29}{}%
+\contentsline {section}{\numberline {5.2}Training of the Tokenizer}{31}{}%
+\contentsline {subsection}{\numberline {5.2.1}Extending the tokenizers vocabulary}{31}{}%
+\contentsline {subsection}{\numberline {5.2.2}Pre-Training the tokenizer}{31}{}%
+\contentsline {section}{\numberline {5.3}Training Process}{32}{}%
+\contentsline {subsection}{\numberline {5.3.1}Moving the bias towards FA domain}{33}{}%
+\contentsline {subsection}{\numberline {5.3.2}Trying different types of losses}{36}{}%
+\contentsline {subsection}{\numberline {5.3.3}Changing the Masking Method}{37}{}%
+\contentsline {chapter}{\numberline {6}Results}{41}{}%
+\contentsline {section}{\numberline {6.1}Performance Measures}{41}{}%
+\contentsline {section}{\numberline {6.2}Discussion of Results}{41}{}%
+\contentsline {chapter}{\numberline {7}Conclusion}{43}{}%
+\contentsline {section}{\numberline {7.1}Future Work}{43}{}%
+\contentsline {chapter}{Bibliography}{45}{}%

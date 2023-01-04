@@ -1,7 +1,7 @@
 \chapter{Experiments} \label{chapter:experiments}
 In this section we will cover the process of preparing the collected dataset, described in section \ref{chapter:datacollection} and training different types of tokenizers and language models until we found the best performing one.
 
-\section{Tokenization of the dataset}
+\section{Tokenization of the dataset}\label{chapter:data_chunking}
 In order to use the dataset created earlier in the chapter \ref{chapter:datacollection} for the BERT based model as training input, it must be transformed into a suitable format. Since we are using the Huggingface trainer, we also need to follow the Huggingface training data format. \newline
 In the first step, the entire text from the CSV file is converted into a dataset dictionary. This is possible with one line of code after importing the datasets package.
 
@@ -34,7 +34,7 @@ return tokenizer(examples["text"])
 	\end{minted}
 \end{code}
 
-The map function, shown in Listing \ref{code:tok_map}, can be used to apply the tokenizer function from Listing \ref{code:tok_funct} to the entire dataset. To speed up the process, we pass the number\_poc=4 attribute, which enables multithreading and splits the process into four threads.
+The map function, shown in Listing \ref{code:tok_map}, can be used to apply the tokenizer function from Listing \ref{code:tok_funct} to the entire dataset. To speed up the process, we pass the textit{number\_poc=4} attribute, which enables multithreading and splits the process into four threads.
 
 \begin{code}
 	\captionof{listing}{Applying the tokenize function on the Text}
@@ -45,7 +45,7 @@ tokenized_datasets = datasets.map(tokenize_function, batched=True, num_proc=4,
 	\end{minted}
 \end{code}
 
-The "text" collumn from the dictionary has now been replaced by the input\_ids which is needed by the modell as an input for training.
+The "text" collumn from the dictionary has now been replaced by the textit{input\_ids} which is needed by the modell as an input for training.
 
 \begin{figure}[H]
 	\centering
@@ -54,8 +54,8 @@ The "text" collumn from the dictionary has now been replaced by the input\_ids w
 	\label{fig:dict_tokenized}
 \end{figure}
 
-After the dataset has been tokenized, the next step is to split it into individual chunks. The size of these chunks depends on the available resources and the maximum context size of the model. The context size can be determined with the method \alert{model\_max\_length}. For BERT based models, like ours, it is 512 tokens.
-We need to concatenate all of our texts together and then split the result in small chunks of a certain \alert{chunk\_size}. To do this, we will use the \alert{map} method again, with the option \alert{batched=True}. This option actually lets us change the number of examples in the datasets by returning a different number of examples than we got. This way, we can create our new samples from a batch of examples.\newline
+After the dataset has been tokenized, the next step is to split it into individual chunks. The size of these chunks depends on the available resources and the maximum context size of the model. The context size can be determined with the method textit{model\_max\_length}. For BERT based models, like ours, it is 512 tokens.
+We need to concatenate all of our texts together and then split the result in small chunks of a certain textit{chunk\_size}. To do this, we will use the textit{map} method again, with the option textit{batched=True}. This option actually lets us change the number of examples in the datasets by returning a different number of examples than we got. This way, we can create our new samples from a batch of examples.\newline
 First, we grab the maximum length our model was pretrained with. This might be a big too big to fit in our GPU RAM. In the first try we chose a chunk size of 64, which turned out not to be suitable because longer sentences were truncated, while shorter sentences were populated with [PAD] tokens (id: 0) until they reach the desired length. Using a small chunk size can be detrimental in real-world scenarios, so it is recommended to use a size that corresponds to the use case the model will be applied to. Because of that we chose a chunk size of 128.
 
 \begin{code}
@@ -102,7 +102,7 @@ We created four types of trained tokenizers. For later discussions we introduce 
 \end{itemize}
 
 \subsection{Extending the tokenizers vocabulary}
-For the first experiment we tried to enhance the language models performance by extending the tokenizers vocabulary. The tokens which we added to the vocabulary were the ontology keywords. As already discussed in the \alert{section before}, some of the keywords included misspellings. We again removed or corrected these keywords to avoid to sabotage our model. \newline
+For the first experiment we tried to enhance the language models performance by extending the tokenizers vocabulary. The tokens which we added to the vocabulary were the ontology keywords. As already discussed in the Section \ref{data_preprocessing}, some of the keywords included misspellings. We again removed or corrected these keywords to avoid to sabotage our model. \newline
 Before extending the tokenizer, it's vocabulary had a size of 31944. To add the keywords to he tokenizers vocabulary, we had to execute the following code:
 
 \begin{code}
@@ -117,12 +117,16 @@ Before extending the tokenizer, it's vocabulary had a size of 31944. To add the 
 The keywords got added to the vocabulary and increased the vocabulary size to 32131. After saving the tokenizer it can be used in the training process like any other pretrained tokenizer.
 
 \subsection{Pre-Training the tokenizer}\label{chapter:training-tokenizer}
-Training a tokenizer is very simple with the\alert{ huggingface} methods. To train a tokenizer we first need to create a training dataset again. This dataset should have the same format as already discribed in chapter \ref{chapter:datacollection}. For our experiments, we assembled four different datasets to train four tokenizers. These were then to be trained together with the language model in different tests. The different data sets were used for testing purposes to find the best possible model.
+Training a tokenizer is very simple with the \alert{ huggingface} methods. To train a tokenizer we first need to create a training dataset again. This dataset should have the same format as already discribed in chapter \ref{chapter:datacollection}. For our experiments, we assembled three different datasets listed in \ref{tok_data} to train three tokenizers. These tokenizers were then to be trained together with the language model in different tests. The different data sets were used for testing purposes to find the best possible model. 
 
-\alert{creating of the training corpus}
+\begin{enumerate} \label{tok_data}
+	\item full dataset containing \textbf{inf} and \textbf{s2}
+	\item smaler dataset including only \textbf{inf}
+	\item \textbf{s2} alone
+\end{enumerate}
 
-
-After creating the training corpus, the tokenizer can be trained with one single line of code. The \alert{train new from iterator} method needs the training corpus and the new vocabulary size as an input. We chose the highest possible vocabulary size, which is 52.000.
+To create the training corpora we used the same methods as already described in Section \ref{chapter:data_format}. Chunking the data into a block size of 128 was not neccessary. \newline
+After creating the training corpus, the tokenizer can be trained with one single line of code. The textit{train\_new\_from\_iterator} method needs the training corpus and the new vocabulary size as an input. We chose the highest possible vocabulary size, which is 52.000.
 
 \begin{code}
 	\captionof{listing}{Training the Tokenizer and resize Vocabulary}
@@ -134,9 +138,7 @@ After creating the training corpus, the tokenizer can be trained with one single
 After training the tokenizer with the smaller training corpus, it tokenized the ontology keywords into 542 tokens instead of 661, which means an improvement in performance.
 
 \section{Training Process}
-\alert{The training process for all of the following experiments is the same and will be discribed below.}
-After creating the training data as described in section \ref{chapter:datachunking}, it is necessary to prepare some requirements for the training process. The whole training is executed on the HPC Cluster, \alert{described in section \ref{chapter:hpc}}, \alert{to ensure the training can be executed as fast as possible}.
-\alert{Most of the training code got copied from the huggingface notebook. The relevant code is described in the section Masked Language Modeling}. It also includes the process of how to chunk the training dataset into a specific block size which is needed by the model as an input. We adapted the code regarding to our needings. \newline
+After creating the training data as described in section \ref{chapter:data_chunking}, it is necessary to prepare some requirements for the training process. It also includes the process of how to chunk the training dataset into a specific block size which is needed by the model as an input. We adapted the code regarding to our needings. \newline
 The training itself contains out of the five steps:
 \begin{enumerate}
 	\item Defining the model and tokenizer checkpoints
@@ -176,7 +178,7 @@ data_collator=data_collator,
 \end{minted}
 \end{code}
 
-The training can be started by calling the method train() from the \alert{transformers trainer object.}
+The training can be started by calling the method \textit{train()} from the \alert{transformers trainer object.}
 \begin{code}
 	\captionof{listing}{Starting the training}
 	\label{code:train}
@@ -187,8 +189,6 @@ trainer.train()
 
 \subsection{Moving the bias towards FA domain}\label{chapter:training-experiments}
 In the first training experiments it was our goal to move the bias of the pretrained S2ORC-SciBERT further towards the semiconductor and failure analysis domain. Therefore we use different datasets. 
-
-\alert{discribe datasets here}
 
 For later discussions and easier use we introduce the following abbreviations:
 \begin{itemize}
@@ -236,7 +236,7 @@ For experiment four we went for a bigger dataset, \textit{inf} dataset combined 
 
 \textbf{Experiment 5:}\\
 As for the last experiments the loss curve hardly changed, we decided to increase the number of training epochs to 15. We sticked with the combination fo the datasets \textit{inf} and \textit{s2} and used the tokenizer \textit{large} as it showed the steepest loss curve at the beginning. The additional 5 epochs showed an improvement compared to the previous training sessions, the loss courve flattens out at a value of 3.088.
-\alert{Bild später ersetzen}
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\textwidth]{figures/loss_infs2_large.png}
@@ -244,7 +244,6 @@ As for the last experiments the loss curve hardly changed, we decided to increas
 	\label{fig:loss_large_large}
 \end{figure}
 
-\alert{Hier Bild von gemeinsamen kurven einfügen}
 
 The various loss functions hardly differ from each other. On the basis of the last curve, which was trained for 15 epochs, it can be seen that the longer training could certainly lead to a better performance. Nevertheless, the loss function already flattens out too much in this area. For this reason, further \alert{ measures} regarding the improvement of the training were researched.
 
@@ -278,7 +277,7 @@ def compute_loss(self, model, inputs, return_outputs=False):
 \end{code}
 \alert{quelle: https://github.com/huggingface/transformers/blob/v4.17.0/src/transformers/trainer.py#L2006}
 
-which means that, by default, the model itself is responsible for computing some sort of loss and returning it to outputs. To implement an own loss function, we had to overwrite the Trainer class and the loss function and defining a cross entropy loss function to return it to outputs. The code is shown in listing \ref{code:cel}. We use the cross entropy loss function from \alert{torch.nn} here. In most cases the \alert{CrossEntropyLoss(}) function gets some weights as inputs, but because in our case pretraining a BERt model is an unsupervised learning task, we have no weights to assign and leave it empty.
+which means that, by default, the model itself is responsible for computing some sort of loss and returning it to outputs. To implement an own loss function, we had to overwrite the Trainer class and the loss function and defining a cross entropy loss function to return it to outputs. The code is shown in listing \ref{code:cel}. We use the cross entropy loss function from \textit{torch.nn} here. In most cases the \textit{CrossEntropyLoss(}) function gets some weights as inputs, but because in our case pretraining a BERt model is an unsupervised learning task, we have no weights to assign and leave it empty.
 
 \begin{code}
 	\captionof{listing}{Cross Entropy Loss}

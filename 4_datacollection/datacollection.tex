@@ -59,7 +59,7 @@ After finishing collecting papers we ended with four independent in domain datas
 	\label{fig:datasets}
 \end{figure}
 
-\section{Data Preprocessing}
+\section{Data Preprocessing}\label{data_preprocessing}
 For later usage during training, we combined the Infineon and the Additional Datasets in one. Moreover, since the biggest part of the S2ORC Dataset was medical and biomedical data, we filtered this dataset by using the FA ontology keywords, retaining only documents that comprise at least one keyword. The resulting filtered dataset contains approximately 542MB of raw text. For later discussions, we introduce the following abbreviations for the datasets:
 
 \begin{itemize}
@@ -85,7 +85,7 @@ The following steps describe the procedure of text cleaning:
 \end{enumerate}
 
 
-\subsection{Dataset Formatting}
+\subsection{Dataset Formatting}\label{chapter:data_format}
 In comparison to traditional neural networks, BERT-based models are like a black box for the engineer. For training the model we used the so-called “transformer” class from \alert{Huggingface}.  The trainer method of the transformer class needs a model, a tokenizer and the training dataset as input. This input dataset needs to have a specific format and datatype otherwise the function would rise an error.  To do so the previous created dataframes got converted into dataframes of two cells, an index and a text cell. An example is shown in Table \ref{tab:format}.
 
 \begin{table}[H]
@@ -102,12 +102,15 @@ In comparison to traditional neural networks, BERT-based models are like a black
 
 The base class \textit{Dataset} from Huggingface implements a Dataset backed by an Apache Arrow table. This type of object can be created out of the dataframe just created with the following code:
 
+\begin{code}
+	\captionof{listing}{Transformation into Dataset Dictionary}
+	\label{code:cel}
 \begin{minted}{python}
 		train_dataset = Dataset.from_dict(df)
 		datasets = datasets.DatasetDict({"train:" train_dataset})
 \end{minted}
+\end{code}
 
-The dataset object allows to specify a training and a test dataset. Since training the language model is an unsupervised learning method, only the training dataset is needed. The resulting dataset objects were saved and could be loaded later for training.
+The dataset object allows to specify a training and a test dataset. Since training the language model is an unsupervised learning method, only the training dataset is needed. \newline
 
-\alert{Tokenizing dataset
-split into blocks}
+BERT based models can handle a block size of maximum 512 charakters as input. Previous training sessions, as described in Chapter \ref{chapter:analysis}, have shown that a block size should be chosen which is as similar as possible to that of the subsequent area of application. According to that we chose a block size of 128. With a map function the full dataset was tokenized into blocks of the defined block size. This process will get covered in the following section. The resulting dataset objects were saved and could be loaded later for training. 
