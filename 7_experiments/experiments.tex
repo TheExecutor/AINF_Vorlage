@@ -117,7 +117,7 @@ Before extending the tokenizer, it's vocabulary had a size of 31944. To add the 
 The keywords got added to the vocabulary and increased the vocabulary size to 32131. After saving the tokenizer it can be used in the training process like any other pretrained tokenizer.
 
 \subsection{Pre-Training the tokenizer}\label{chapter:training-tokenizer}
-Training a tokenizer is very simple with the \alert{ huggingface} methods. To train a tokenizer we first need to create a training dataset again. This dataset should have the same format as already discribed in chapter \ref{chapter:datacollection}. For our experiments, we assembled three different datasets listed in \ref{tok_data} to train three tokenizers. These tokenizers were then to be trained together with the language model in different tests. The different data sets were used for testing purposes to find the best possible model. 
+Training a tokenizer is very simple with the Huggingface methods \cite{trainer}. To train a tokenizer we first need to create a training dataset again. This dataset should have the same format as already discribed in chapter \ref{chapter:datacollection}. For our experiments, we assembled three different datasets listed in \ref{tok_data} to train three tokenizers. These tokenizers were then to be trained together with the language model in different tests. The different data sets were used for testing purposes to find the best possible model. 
 
 \begin{enumerate} \label{tok_data}
 	\item full dataset containing \textbf{inf} and \textbf{s2}
@@ -178,7 +178,7 @@ data_collator=data_collator,
 \end{minted}
 \end{code}
 
-The training can be started by calling the method \textit{train()} from the \alert{transformers trainer object.}
+The training can be started by calling the method \textit{train()} from the transformers trainer object.
 \begin{code}
 	\captionof{listing}{Starting the training}
 	\label{code:train}
@@ -245,11 +245,11 @@ As for the last experiments the loss curve hardly changed, we decided to increas
 \end{figure}
 
 
-The various loss functions hardly differ from each other. On the basis of the last curve, which was trained for 15 epochs, it can be seen that the longer training could certainly lead to a better performance. Nevertheless, the loss function already flattens out too much in this area. For this reason, further \alert{ measures} regarding the improvement of the training were researched.
+The various loss functions hardly differ from each other. On the basis of the last curve, which was trained for 15 epochs, it can be seen that the longer training could certainly lead to a better performance. Nevertheless, the loss function already flattens out too much in this area. For this reason, further opportunities regarding the improvement of the training were researched.
 
 \subsection{Trying different types of losses}
 Another attempt to improve the performance of the model is to implement a different loss function. Cross entropy loss seemed to be particularly suitable. In the case of masked language modeling, this metric compares the token predicted by the model with the ground truth and assigns a value between 0 and 1 to the prediction. 0 stands for a perfect prediction. During training, the values are aggregated to represent the loss function. \newline
-The loss function used by the \alert{Trainer object from Huggingface Transformers} is shown in Listing \ref{code:loss}.
+The loss function \cite{loss} used by the Trainer object from Huggingface Transformers is shown in Listing \ref{code:loss}.
 
 \begin{code}
 	\captionof{listing}{Trainer compute loss function}
@@ -275,7 +275,7 @@ def compute_loss(self, model, inputs, return_outputs=False):
 	return (loss, outputs) if return_outputs else loss
 \end{minted}
 \end{code}
-\alert{quelle: https://github.com/huggingface/transformers/blob/v4.17.0/src/transformers/trainer.py#L2006}
+
 
 which means that, by default, the model itself is responsible for computing some sort of loss and returning it to outputs. To implement an own loss function, we had to overwrite the Trainer class and the loss function and defining a cross entropy loss function to return it to outputs. The code is shown in listing \ref{code:cel}. We use the cross entropy loss function from \textit{torch.nn} here. In most cases the \textit{CrossEntropyLoss(}) function gets some weights as inputs, but because in our case pretraining a BERt model is an unsupervised learning task, we have no weights to assign and leave it empty.
 
@@ -297,12 +297,12 @@ class MyTrainer(Trainer):
 \end{code}
 
 \subsection{Changing the Masking Method}
-The original masking method which is used by all BERT based models is that every token in an input blocked gets masked by the probability of 15\%. 
-\alert{hier fehlt noch was}
+The original masking method which is used by all BERT based models is that every token in an input blocked gets masked by the probability of 15\% as described in chapter \ref{bert}. 
 
-Based on the latest experiments, it can be seen that our models are not sufficiently well trained in the semiconductor area. Another attempt to improve the performance is to adjust the masking strategy during the training. After some research we came across the Whole Word Masking strategy. With this method, not only some tokens are randomly masked, but it is also checked whether the token to be masked is a standalone token or a subtoken. If a subtoken, which is part of a word, should get masked, the algorithm also masks all the surrounding tokens that belong to the word. In addition we increased the masking probability from 15\% to 20\%. The code is visible in Listing \ref{code:wwm}. Therefore we created a new data collator class \alert{which has the whole word masking method implemented} and handed this data collator to the trainer shown in Listing \ref{code:trainer_wwm}.
+Based on the latest experiments, it can be seen that our models are not sufficiently well trained in the semiconductor area. Another attempt to improve the performance is to adjust the masking strategy during the training. After some research we came across the Whole Word Masking strategy. With this method, not only some tokens are randomly masked, but it is also checked whether the token to be masked is a standalone token or a subtoken. If a subtoken, which is part of a word, should get masked, the algorithm also masks all the surrounding tokens that belong to the word. In addition we increased the masking probability from 15\% to 20\%. The code is visible in Listing \ref{code:wwm}. Therefore we created a new data collator class implementing the new masking method and handed this data collator to the trainer shown in Listing \ref{code:trainer_wwm}.
 
 \alert{nicht vergessen tokenizer map funktion geändert damit word ids im dataset}
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{figures/tok_dataset_wordids.png}

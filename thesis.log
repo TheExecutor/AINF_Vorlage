@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.7.14)  4 JAN 2023 08:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.7.14)  4 JAN 2023 10:18
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1064,6 +1064,10 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <17.28> on input line 398.
 
+Overfull \hbox (116.94106pt too wide) in paragraph at lines 398--398
+ [][] 
+ []
+
 [1
 
 
@@ -1244,9 +1248,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 195--196
 
  []
 
-
-LaTeX Warning: Citation `Devlin' on page 15 undefined on input line 197.
-
 <figures/bert_training.png, id=108, 722.7pt x 289.08pt>
 File: figures/bert_training.png Graphic file (type png)
 <use figures/bert_training.png>
@@ -1274,26 +1275,16 @@ Chapter 3.
 <figures/medbert.PNG, id=120, 609.77812pt x 198.7425pt>
 File: figures/medbert.PNG Graphic file (type png)
 <use figures/medbert.PNG>
-Package pdftex.def Info: figures/medbert.PNG  used on input line 29.
+Package pdftex.def Info: figures/medbert.PNG  used on input line 27.
 (pdftex.def)             Requested size: 455.0pt x 148.30139pt.
-
-
-LaTeX Warning: Citation `Beltagy' on page 18 undefined on input line 36.
-
 
 Overfull \vbox (1.26006pt too high) has occurred while \output is active []
 
 
 [18 <./figures/medbert.PNG>]
-Overfull \hbox (13.42151pt too wide) in paragraph at lines 45--47
-\T1/lmr/m/n/10.95 brary. Sim-i-lary to the BERT ba-se-Vo-cab, it is a \T1/lmr/m
-/it/10.95 Word-Piece \T1/lmr/m/n/10.95 vo-cab. []https://arxiv.org/abs/1903.106
-76[] 
- []
-
 \openout4 = `thesis.pyg'.
 
-(_minted-thesis/default.pygstyle)
+ (_minted-thesis/default.pygstyle)
 (_minted-thesis/C23CED146F01BF5CEBA20ECC13D27AF98FBDBCB5E0AFA139CAB6197421B8C3C
 1.pygtex
 LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 
@@ -1317,7 +1308,7 @@ Overfull \vbox (1.26006pt too high) has occurred while \output is active []
 <figures/example_good_bad.PNG, id=130, 167.62625pt x 218.8175pt>
 File: figures/example_good_bad.PNG Graphic file (type png)
 <use figures/example_good_bad.PNG>
-Package pdftex.def Info: figures/example_good_bad.PNG  used on input line 80.
+Package pdftex.def Info: figures/example_good_bad.PNG  used on input line 87.
 (pdftex.def)             Requested size: 136.50139pt x 178.1861pt.
 \openout4 = `thesis.pyg'.
 
@@ -1331,14 +1322,14 @@ Overfull \vbox (1.26006pt too high) has occurred while \output is active []
 <figures/keyword_comparison.PNG, id=136, 244.41313pt x 53.19875pt>
 File: figures/keyword_comparison.PNG Graphic file (type png)
 <use figures/keyword_comparison.PNG>
-Package pdftex.def Info: figures/keyword_comparison.PNG  used on input line 104
+Package pdftex.def Info: figures/keyword_comparison.PNG  used on input line 115
 .
 (pdftex.def)             Requested size: 227.5pt x 49.51814pt.
 <figures/wordstems_comparison.PNG, id=137, 106.3975pt x 72.27pt>
 File: figures/wordstems_comparison.PNG Graphic file (type png)
 <use figures/wordstems_comparison.PNG>
 Package pdftex.def Info: figures/wordstems_comparison.PNG  used on input line 1
-15.
+26.
 (pdftex.def)             Requested size: 136.50139pt x 92.7236pt.
 \openout4 = `thesis.pyg'.
 
@@ -1376,7 +1367,7 @@ Overfull \vbox (1.26006pt too high) has occurred while \output is active []
 <figures/s2orc_filtered.PNG, id=157, 350.81062pt x 252.945pt>
 File: figures/s2orc_filtered.PNG Graphic file (type png)
 <use figures/s2orc_filtered.PNG>
-Package pdftex.def Info: figures/s2orc_filtered.PNG  used on input line 30.
+Package pdftex.def Info: figures/s2orc_filtered.PNG  used on input line 29.
 (pdftex.def)             Requested size: 273.00278pt x 196.85631pt.
 
 Overfull \vbox (1.26006pt too high) has occurred while \output is active []
@@ -1386,7 +1377,7 @@ Overfull \vbox (1.26006pt too high) has occurred while \output is active []
 <figures/datasets.PNG, id=162, 470.25688pt x 137.51375pt>
 File: figures/datasets.PNG Graphic file (type png)
 <use figures/datasets.PNG>
-Package pdftex.def Info: figures/datasets.PNG  used on input line 57.
+Package pdftex.def Info: figures/datasets.PNG  used on input line 56.
 (pdftex.def)             Requested size: 455.0pt x 133.05244pt.
 
 Overfull \vbox (1.26006pt too high) has occurred while \output is active []
@@ -1398,7 +1389,7 @@ Overfull \vbox (1.26006pt too high) has occurred while \output is active []
 
 (_minted-thesis/36FCF5501599EE97423FF79752ACF77F8FBDBCB5E0AFA139CAB6197421B8C3C
 1.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 114--115
+Underfull \hbox (badness 10000) in paragraph at lines 113--114
 
  []
 
@@ -1465,10 +1456,6 @@ Overfull \vbox (1.26006pt too high) has occurred while \output is active []
 
 (_minted-thesis/F9CED8E908E7661E8B3E7993EB8782DB8FBDBCB5E0AFA139CAB6197421B8C3C
 1.pygtex)
-
-LaTeX Warning: Reference `code:checkpoint' on page 32 undefined on input line 1
-51.
-
 
 LaTeX Warning: Reference `chapter:datachunking' on page 32 undefined on input l
 ine 151.
@@ -1545,22 +1532,6 @@ Overfull \vbox (1.26006pt too high) has occurred while \output is active []
 
 
 [36 <./figures/loss_infs2_large.png>])
-! You can't use `macro parameter character #' in horizontal mode.
-<argument> ...4.17.0/src/transformers/trainer.py##
-                                                  L2006
-l.278 ...4.17.0/src/transformers/trainer.py#L2006}
-                                                  
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-Overfull \hbox (30.02315pt too wide) in paragraph at lines 278--279
-[]\T1/lmr/m/n/10.95 quelle: https://github.com/huggingface/transformers/blob/v4
-.17.0/src/transformers/trainer.pyL2006[] 
- []
-
 \openout4 = `thesis.pyg'.
 
 
@@ -1572,32 +1543,24 @@ File: figures/tok_dataset_wordids.png Graphic file (type png)
 Package pdftex.def Info: figures/tok_dataset_wordids.png  used on input line 30
 8.
 (pdftex.def)             Requested size: 455.0pt x 73.91414pt.
-
-Overfull \vbox (1.26006pt too high) has occurred while \output is active []
-
-
-[37]
+ [37 <./figures/tok_dataset_wordids.png>]
 \openout4 = `thesis.pyg'.
 
 
 (_minted-thesis/7E6BD924E479C69DBAFE058FE3A25A608FBDBCB5E0AFA139CAB6197421B8C3C
 1.pygtex)
-<figures/wwm_example.png, id=218, 792.0792pt x 159.4758pt>
+<figures/wwm_example.png, id=219, 792.0792pt x 159.4758pt>
 File: figures/wwm_example.png Graphic file (type png)
 <use figures/wwm_example.png>
 Package pdftex.def Info: figures/wwm_example.png  used on input line 354.
 (pdftex.def)             Requested size: 455.0pt x 91.61026pt.
-
-Overfull \vbox (1.26006pt too high) has occurred while \output is active []
-
-
-[38 <./figures/tok_dataset_wordids.png>]
+ [38 <./figures/wwm_example.png>]
 \openout4 = `thesis.pyg'.
 
 
 (_minted-thesis/38A8D5727389789A58DF91176F32A8908FBDBCB5E0AFA139CAB6197421B8C3C
 1.pygtex)
-<figures/loss_wwm_20.png, id=223, 171.64125pt x 126.97438pt>
+<figures/loss_wwm_20.png, id=224, 171.64125pt x 126.97438pt>
 File: figures/loss_wwm_20.png Graphic file (type png)
 <use figures/loss_wwm_20.png>
 Package pdftex.def Info: figures/loss_wwm_20.png  used on input line 377.
@@ -1606,11 +1569,10 @@ Package pdftex.def Info: figures/loss_wwm_20.png  used on input line 377.
 Overfull \vbox (1.26006pt too high) has occurred while \output is active []
 
 
-[39 <./figures/wwm_example.png> <./figures/loss_wwm_20.png>]
+[39 <./figures/loss_wwm_20.png>]
 \openout2 = `5_resultsevaluation/results.aux'.
 
-
-(5_resultsevaluation/results.tex
+ (5_resultsevaluation/results.tex
 Overfull \vbox (1.26006pt too high) has occurred while \output is active []
 
 
@@ -1641,7 +1603,225 @@ No file thesis.nls.
 
 
 
-])
+]
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
+[]\T1/lmr/m/n/10.95 One-Hot En-cod-ing - an overview | Sci-enceDi-rect Top-ics.
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
+\T1/lmr/m/n/10.95 https://www.sciencedirect.com/topics/computer-science/one-hot
+-encoding. Zuge-
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.10 ...https://doi.org/10.1007/978-0-387-30164-8_
+                                                  832.
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.11 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.11 
+     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Underfull \hbox (badness 1859) in paragraph at lines 10--11
+[]\T1/lmr/m/n/10.95 Sammut, Claude, und Ge-of-frey I. Webb, Her-aus-ge-ber. ^^R
+TF^^UIDF^^P. En-cy-clo-
+ []
+
+
+Underfull \hbox (badness 2119) in paragraph at lines 10--11
+\T1/lmr/m/n/10.95 pe-dia of Ma-chine Learn-ing, Springer US, 2010, S. 986^^U87.
+ Springer Link,
+ []
+
+! Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.11 
+     
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.13 ...ta0 documentation. https://d2l.ai/chapter_
+                                                  natural-language-processin...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 13.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.14 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.14 
+     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
+[]\T1/lmr/m/n/10.95 15.1. Word Em-bed-ding (word2vec) ^^V Dive into Deep Learn-
+ing 1.0.0-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
+\T1/lmr/m/n/10.95 beta0 doc-u-men-ta-tion. https://d2l.ai/chapter$[]\OML/lmm/m/
+it/10.95 atural \OMS/lmsy/m/n/10.95 ^^@ \OML/lmm/m/it/10.95 language \OMS/lmsy/
+m/n/10.95 ^^@ \OML/lmm/m/it/10.95 processing \OMS/lmsy/m/n/10.95 ^^@
+ []
+
+! Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.14 
+     
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+Underfull \hbox (badness 1194) in paragraph at lines 25--26
+\T1/lmr/m/n/10.95 tured elec-tronic health records for dis-ease pre-dic-tion. a
+rXiv, 22. Mai 2020. arXiv.org,
+ []
+
+
+! LaTeX Error: Unicode character   (U+202F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 NLTK 
+            :: Natural Language Toolkit. https://www.nltk.org/. Zugegriffen ...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.43 ...//huggingface.co/transformers/v4.8.0/main_
+                                                  classes/main_classes/train...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 43.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.44 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.44 
+     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (125.51869pt too wide) in paragraph at lines 43--44
+[]\T1/lmr/m/n/10.95 Trainer. https://huggingface.co/transformers/v4.8.0/main$[]
+\OML/lmm/m/it/10.95 lasses=main[]lasses=trainer:html:Zugegriffen\OT1/lmr/m/n/10
+.95 4\OML/lmm/m/it/10.95 :J\OT1/lmr/m/n/10.95 �\OML/lmm/m/it/10.95 nner\OT1/lmr
+/m/n/10.95 2023\OML/lmm/m/it/10.95 :[]$ 
+ []
+
+! Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.44 
+     
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--47
+[]\T1/lmr/m/n/10.95 Wolf, Thomas, u. a. Trans-form-ers: State-of-the-Art Nat-u-
+ral Lan-guage Pro-cess-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--47
+\T1/lmr/m/n/10.95 ing. 2018. As-so-ci-a-tion for Com-pu-ta-tional Lin-guis-tics
+, Ok-to-ber 2020. GitHub,
+ []
+
+[45])
+
+LaTeX Warning: Citation `RSA' undefined on input line 644.
+
+
+LaTeX Warning: Citation `DES' undefined on input line 644.
+
+
+LaTeX Warning: Citation `Rijndael' undefined on input line 644.
+
+
+LaTeX Warning: Citation `DSA' undefined on input line 644.
+
+
+LaTeX Warning: Citation `ECDSA' undefined on input line 644.
+
+
+LaTeX Warning: Citation `diffkrypto' undefined on input line 644.
+
+
+LaTeX Warning: Citation `HandCrypto' undefined on input line 644.
+
 
 LaTeX Warning: Citation `HandChip' undefined on input line 644.
 
@@ -1649,9 +1829,21 @@ LaTeX Warning: Citation `HandChip' undefined on input line 644.
 LaTeX Warning: Citation `ChipAnw' undefined on input line 644.
 
 
+LaTeX Warning: Citation `Ashb00' undefined on input line 644.
+
+
+LaTeX Warning: Citation `BeKP91' undefined on input line 644.
+
+
 LaTeX Warning: Citation `BeKH01' undefined on input line 644.
 
-[45] (thesis.aux (1_introduction/introduction.aux)
+
+LaTeX Warning: Citation `Breu84' undefined on input line 644.
+
+
+LaTeX Warning: Citation `Chen00' undefined on input line 644.
+
+[46] (thesis.aux (1_introduction/introduction.aux)
 (3_literaturereview/literaturereview.aux) (2_analysis/analysis.aux)
 (4_datacollection/datacollection.aux) (7_experiments/experiments.aux)
 (5_resultsevaluation/results.aux) (6_conclusion/conclusion.aux))
@@ -1665,13 +1857,13 @@ runsystem(del thesis.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 23224 strings out of 478582
- 483334 string characters out of 2841040
- 971629 words of memory out of 3000000
- 40780 multiletter control sequences out of 15000+600000
+ 23230 strings out of 478582
+ 483392 string characters out of 2841040
+ 971645 words of memory out of 3000000
+ 40786 multiletter control sequences out of 15000+600000
  554642 words of font info for 90 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 115i,11n,117p,1608b,669s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 115i,11n,117p,1608b,695s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/GrabnerCorin/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts
 1.enc}{C:/Users/GrabnerCorin/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/l
 m-mathit.enc}{C:/Users/GrabnerCorin/AppData/Local/Programs/MiKTeX/fonts/enc/dvi
@@ -1695,9 +1887,9 @@ X/fonts/type1/public/lm/lmsy10.pfb><C:/Users/GrabnerCorin/AppData/Local/Program
 s/MiKTeX/fonts/type1/public/lm/lmtk10.pfb><C:/Users/GrabnerCorin/AppData/Local/
 Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/GrabnerCorin/AppData
 /Local/Programs/MiKTeX/fonts/type1/public/lm/lmtti10.pfb>
-Output written on thesis.pdf (55 pages, 1859789 bytes).
+Output written on thesis.pdf (56 pages, 1860656 bytes).
 PDF statistics:
- 328 PDF objects out of 1000 (max. 8388607)
+ 331 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  143 words of extra memory for PDF output out of 10000 (max. 10000000)
 

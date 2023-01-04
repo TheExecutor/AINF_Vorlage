@@ -1,55 +1,48 @@
 \begin{thebibliography}{MeVO96}
 
-\bibitem[Ashb00]{Ashb00}
-J.~D.~M. Ashbourn: {Biometrics : Advanced Identify Verification: The Complete
-  Guide}. Springer Verlag (2000).
+\bibitem{Khurana}
+Khurana, Diksha, u. a. „Natural Language Processing: State of the Art, Current Trends and Challenges“. Multimedia Tools and Applications, Juli 2022. Springer Link, https://doi.org/10.1007/s11042-022-13428-4.
 
+\bibitem{onehot}
+One-Hot Encoding - an overview | ScienceDirect Topics. https://www.sciencedirect.com/topics/computer-science/one-hot-encoding. Zugegriffen 4. Jänner 2023.
 
-\bibitem[BeKP91]{BeKP91}
-A.~Beutelspacher, A.~G. Kersten, A.~Pfau: {Chipkarten als Sicherheitswerkzeug}.
-  Springer Verlag, Berlin (1991).
+\bibitem{Sammut}
+Sammut, Claude, und Geoffrey I. Webb, Herausgeber. „TF–IDF“. Encyclopedia of Machine Learning, Springer US, 2010, S. 986–87. Springer Link, https://doi.org/10.1007/978-0-387-30164-8_832.
 
-\bibitem[BiSh91]{diffkrypto}
-E.~Biham, A.~Shamir: Differential Cryptanalysis of DES-like Cryptosystems.
-  \emph{In: CRYPTO '90: Proceedings of the 10th Annual International Cryptology
-  Conference on Advances in Cryptology}, Springer-Verlag, London, UK (1991),
-  2--21.
+\bibitem{word2vec}
+15.1. Word Embedding (word2vec) — Dive into Deep Learning 1.0.0-beta0 documentation. https://d2l.ai/chapter_natural-language-processing-pretraining/word2vec.html. Zugegriffen 4. Jänner 2023.
 
-\bibitem[Breu84]{Breu84}
-R.~Breuer: {Computer-Schutz durch Sicherung und Versicherung}.
-  Karamanolis-Verlag (1984).
+\bibitem{Vaswani}
+Vaswani, Ashish, u. a. Attention Is All You Need. arXiv, 5. Dezember 2017. arXiv.org, https://doi.org/10.48550/arXiv.1706.03762.
+  
+\bibitem{Devlin}
+Devlin, Jacob, u. a. BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. arXiv, 24. Mai 2019. arXiv.org, https://doi.org/10.48550/arXiv.1810.04805.
 
-\bibitem[Chen00]{Chen00}
-Z.~Chen: {Java Card Technology for Smart Cards: Architecture and Programmer's
-  Guide (The Java Series)}. Addison-Wesley (2000).
+\bibitem{Liu}
+Liu, Yinhan, u. a. RoBERTa: A Robustly Optimized BERT Pretraining Approach. arXiv, 26. Juli 2019. arXiv.org, https://doi.org/10.48550/arXiv.1907.11692.
 
-\bibitem[DaRi00]{Rijndael}
-J.~Daemen, V.~Rijmen: The Block Cipher Rijndael. \emph{In: CARDIS '98:
-  Proceedings of the The International Conference on Smart Card Research and
-  Applications}, Springer-Verlag, London, UK (2000), 277--284.
+\bibitem{Rasmi}
+Rasmy, Laila, u. a. Med-BERT: pre-trained contextualized embeddings on large-scale structured electronic health records for disease prediction. arXiv, 22. Mai 2020. arXiv.org, https://doi.org/10.48550/arXiv.2005.12833.
 
-\bibitem[JoMV01]{ECDSA}
-D.~Johnson, A.~Menezes, S.~A. Vanstone: {The Elliptic Curve Digital Signature
-  Algorithm (ECDSA)}. In: \emph{International Journal on Information Security},
-  1, 1 (2001), 36--63.
+\bibitem{Beltagy}
+Beltagy, Iz, u. a. SciBERT: A Pretrained Language Model for Scientific Text. arXiv, 10. September 2019. arXiv.org, https://doi.org/10.48550/arXiv.1903.10676.
 
-\bibitem[MeVO96]{HandCrypto}
-A.~J. Menezes, S.~A. Vanstone, P.~C.~V. Oorschot: Handbook of Applied
-  Cryptography. CRC Press, Inc., Boca Raton, FL, USA (1996).
+\bibitem{Lo}
+Lo, Kyle, u. a. S2ORC: The Semantic Scholar Open Research Corpus. arXiv, 6. Juli 2020. arXiv.org, https://doi.org/10.48550/arXiv.1911.02782.
 
-\bibitem[NIST77]{DES}
-NIST: {Data Encryption Standard}, \emph{Federal information processing
-  standards publication}, Bd.~46. {National Institute for Standards and
-  Technology} (1977).
+\bibitem{models}
+Models - Hugging Face. https://huggingface.co/models. Zugegriffen 4. Jänner 2023.
 
-\bibitem[NIST00]{DSA}
-NIST: {FIPS PUB 186-2} {Digital Signature Standard (DSS)}. {National Institute
-  for Standards and Technology}, {Gaithersburg, MD, USA} (2000),
-  \urlprefix\url{http://www.itl.nist.gov/fipspubs/fip186-2.pdf}.
+\bibitem{nltk}
+NLTK :: Natural Language Toolkit. https://www.nltk.org/. Zugegriffen 4. Jänner 2023.
 
-\bibitem[RiSA78]{RSA}
-R.~L. Rivest, A.~Shamir, L.~M. Adleman: A Method for Obtaining Digital
-  Signatures and Public-Key Cryptosystems. In: \emph{Communications of the
-  ACM}, 21, 2 (1978), 120--126.
+\bibitem{transformers}
+Transformers. https://huggingface.co/docs/transformers/index. Zugegriffen 4. Jänner 2023.
+
+\bibitem{trainer}
+Trainer. https://huggingface.co/transformers/v4.8.0/main_classes/main_classes/trainer.html. Zugegriffen 4. Jänner 2023.
+
+\bibitem{loss}
+Wolf, Thomas, u. a. Transformers: State-of-the-Art Natural Language Processing. 2018. Association for Computational Linguistics, Oktober 2020. GitHub, https://www.aclweb.org/anthology/2020.emnlp-demos.6.
 
 \end{thebibliography}

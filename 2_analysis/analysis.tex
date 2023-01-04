@@ -16,13 +16,11 @@ RoBERTa is the name of an optimized BERT pretraining approach developed by Faceb
 \end{itemize}
 
 To increase the training data the developers used further text data with a total size of 160 gigabytes are used. This data includes the Common Crawl News dataset, which has 63 million articles and is 76 GB in size, the Open Web Text corpus, which is 38 GB in size, and stories from Common Crawl, which are 31 GB in size. \newline
-The optimization of the BERT pretraining with RoBERTa shows significant improvements compared to the original BERT training in various NLP benchmarks. In NLP benchmarks such as GLUE (General Language Understanding Evaluation), SQuAD (Stanford Question Answering Dataset) or RACE (ReAding Comprehension from Examinations), RoBERTa achieved top scores that had not been achieved before. For example, RoBERTa achieved a top position with an accuracy of 88.5 in the GLUE benchmark.
+The optimization of the BERT pretraining with RoBERTa shows significant improvements compared to the original BERT training in various NLP benchmarks. In NLP benchmarks such as GLUE (General Language Understanding Evaluation), SQuAD (Stanford Question Answering Dataset) or RACE (ReAding Comprehension from Examinations), RoBERTa achieved top scores that had not been achieved before. For example, RoBERTa achieved a top position with an accuracy of 88.5 in the GLUE benchmark \cite{Liu}.
 
-\alert{https://www.bigdata-insider.de/was-ist-roberta-a-1116137/}
 \subsection{Med-BERT}
-\alert{https://arxiv.org/abs/2005.12833}
 Med-BERT is a BERT based model which got trained on the EHR (electronical health records) dataset. The EHR is containing data from 28.490.650 patients. Similarly to RoBERTa they also exlcuded Next Sentence Prediction from the training task ans used MLM only. As already described in Section \ref{bert}, BERT based models usually have the additional tokens SEP and CLS in their input layer. The CLS token summarizes the information of the input int two sentences, but as the EH records are usually much longer than two sentences, the CLS token was not helpful. Consequently, the developers removed the CLS and SEP tokens from the input layer. \newline
-Figure \ref{fig:medbert} depicts the Med-BERT structure. As an input the model gets three types of embeddings, code, serialization and visit embeddigs. Code embeddings are representing the diagnosis code were serialization embeddings denote the relative order of each code for each visit. Visit embeddings are neccessary to distinguish between different visits.
+Figure \ref{fig:medbert} depicts the Med-BERT structure. As an input the model gets three types of embeddings, code, serialization and visit embeddigs. Code embeddings are representing the diagnosis code were serialization embeddings denote the relative order of each code for each visit. Visit embeddings are neccessary to distinguish between different visits \cite{Rasmi}.
 
 \begin{figure}[H]
 	\centering
@@ -42,24 +40,32 @@ As pretraining BERT for long sentences can be slow, the developers set a maximum
 	\item Training a BERT model from scratch with the constructed SciVocab.
 \end{itemize}
 
-The SciVocab was previously created out of the collected data corpus using the \textit{SentencePiece} library. Similary to the BERT baseVocab, it is a \textit{WordPiece} vocab. \alert{https://arxiv.org/abs/1903.10676} \newline
-Although the training of the model with scientific texts sounds promising, the amount of 82\% biomedical domain could be a drawback for our task.
+The SciVocab was previously created out of the collected data corpus using the \textit{SentencePiece} library. Similary to the BERT baseVocab, it is a \textit{WordPiece} vocab. \newline
+Although the training of the model with scientific texts sounds promising, the amount of 82\% biomedical domain could be a drawback for our task \cite{Beltagy}.
 
 \subsection{S2ORC-SciBERT}
-The S2ORC-SciBERT is a SciBERT model which was further trained on the S2ORC dataset which will be presented in Section \ref{s2orc_dataset}. It got published simultaneously with the dataset itself from the same developers. Compared to SciBERT it has a wider corpus including 20 different domains like Computer Science, Mathematical Science and Engineering which could be beneficial for the FA domain. However it was also trained on Medical and Biology data which again could be a drawback for the model as with SciBERT and Med-BERT.
-\alert{https://paperswithcode.com/paper/gorc-a-large-contextual-citation-graph-of}
+The S2ORC-SciBERT is a SciBERT model which was further trained on the S2ORC dataset which will be presented in Section \ref{s2orc_dataset}. It got published simultaneously with the dataset itself from the same developers. Compared to SciBERT it has a wider corpus including 20 different domains like Computer Science, Mathematical Science and Engineering which could be beneficial for the FA domain. However it was also trained on Medical and Biology data which again could be a drawback for the model as with SciBERT and Med-BERT \cite{Lo}.
 
 \section{Choosing the Model Entrypoint}
 Since BERT models studied in this paper were trained on different text corpora, their tokenizers might provide different coverage of important terms used in the FA domain, such as the ones stored in FA ontology. To determine the coverage, we first analyze the tokenization of the ontology keywords with the three language models: traditional BERT, SciBERT and S2ORC-SciBERT. With this analysis it was possible to gain a first impression about the vocabulary of the models and how well they fit to the electrical domain. \newline
-The models got downloaded from the website \alert{Huggingface} and can be load into the code as follows:
+The models got downloaded from the website Huggingface \cite{models} and can be load into the code as follows:
+
+\begin{code}
+	\captionof{listing}{Definition of model and tokenizer checkpoint}
+	\label{code:checkpoint}
 \begin{minted}{python}
 	model = BertModel.from_pretrained("/path/to/model/")
 	tokenizer = BertTokenizer(vocab_file = '../path/to/tokeizer/vocab.txt')
 \end{minted}
+\end{code}
 
 To receive the keywords, we executed an existing function provided from our supervisor Christian Burmer. It executes a script with a request to the SparQL Database receiving the ontology keywords in a list. This keywords also occur in the reports as indicators for the content. \newline
 After receiving the keywords from the ontology and having a deeper look at them, we found some misspellings like in the word \textit{flasover}, which misses a h to become \textit{flashover}. These typos could confuse the models and lead to some mistokenization. To prevent this, we will first run some spell checking and correction methods on the keywords before further processing it. Therefore we tried different packages like the \textit{Pyspellchecker} or \textit{SymSpellPy} which are based on the \textit\alert{{Peter Novig's method}}. As both of the two packages did not work, we skimmed the keywords manually and corrected misspellings. \newline
 With the correct spelled keywords we started the experiment of tokenizing them with the three different BERT models. The code for tokenization was the same for every model:
+
+\begin{code}
+	\captionof{listing}{Tokenizing the input with a BERT based model}
+	\label{code:tokenizing}
 \begin{minted}{python}
 	# Run tokenizer.
 	tokenized_word = s2orc_scibert_tokenizer.tokenize(word)
@@ -72,6 +78,7 @@ With the correct spelled keywords we started the experiment of tokenizing them w
 		badly_tokenized_words_s2orc += 1
 		bad_words.extend(tokenized_word)
 \end{minted}
+\end{code}
 
 We created a loop which hands every word over to the tokenizers and also analyzes if the resulting word is included in the models vocabulary or not. A word which is already in the vocabulary will not be divided into subtokens and so consists of only one token. If it is not included in the vocabulary, we determined if the word was good or badly tokenized. A word got considered as badly tokenized if it was split in more than two tokens. Otherwise the tokenization got considered as good. At the end of the execution, we created a dataframe depicting how the individual words got splitted into tokens. An example of the dataframe is depicted in Figure \ref{fig:goodAndBad}. Here the keyword "lifted clip" would get considered as badly tokenized word and the keyword "requestor" as good.
 
@@ -83,8 +90,11 @@ We created a loop which hands every word over to the tokenizers and also analyze
 \end{figure}
 
 
-Next we analyzed the word stems of the failure analysis reports and again examined the tokenization of the words with the language models. We did not analyze the word stems of the whole reports, but only the word stems of the most frequently used words. To obtain the frequency distribution and the word stems of the reports, we used the NLTK (Natural Language Toolkit) library. It includes the so called \textit{SnowballStemmer}, because according to the documentation, this stemmer works better for English text. Stemmers remove morphological affixes from words, leaving only the word stem. To run the tokenization experiment, we also had to lower case the word stems and transform plural words into singles. The code can be seen in the code below. For the tokenization itself, the same code has been used as already explained above.
+Next we analyzed the word stems of the failure analysis reports and again examined the tokenization of the words with the language models. We did not analyze the word stems of the whole reports, but only the word stems of the most frequently used words. To obtain the frequency distribution and the word stems of the reports, we used the NLTK (Natural Language Toolkit) library. It includes the so called \textit{SnowballStemmer}, because according to the documentation, this stemmer works better for English text. Stemmers remove morphological affixes from words, leaving only the word stem. To run the tokenization experiment, we also had to lower case the word stems and transform plural words into singles. The code can be seen in the Listing \ref{code:stemming} below. For the tokenization itself, the same code has been used as already explained above.
 
+\begin{code}
+	\captionof{listing}{Stemming of Text Corpus}
+	\label{code:stemming}
 \begin{minted}{python}
 	#create a new stemmer
 	stemmer = SnowballStemmer("english")
@@ -95,6 +105,7 @@ Next we analyzed the word stems of the failure analysis reports and again examin
 	word_stems = set(singles)
 	print(' '.join(singles))
 \end{minted}
+\end{code}
 
 As a result of the tokenization of the keywords it can be seen that SciBERT and S2ORC-SciBERt both perform better on the keywords as the traditional BERT model. Both models contain a few more keywords in their vocabulary than the BERT model. The resulting statistic can be seen in Figure \ref{fig:comparison}. We expected this result because the training data of these two models fits better to our electrical domain than the data BERT was trained with which is more widespread.
 
